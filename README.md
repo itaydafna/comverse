@@ -1,4 +1,4 @@
 # comverse
 comverse Netcraft Project
 
-check out my progress [here...](http://weknowyourdreamz.com/images/desert/desert-02.jpg)
+check out my progress [here...](https://rawgit.com/itaydafna/comverse/master/index.html)
