@@ -1,3 +1,10 @@
+/*general styling*/
+
+html {
+	font-family: "open sans" sans-serif;
+	font-size: 62.5%;
+}
+
 ul {
 	list-style-type: none;
 }
@@ -7,14 +14,58 @@ a {
 	text-decoration: none;
 }
 
-.headlines {
-	background-image: url("../resources/img/slider/custom-experience.jpg");
-	color:#FFF;
-}
-
 .gen-button {
 	background: #3096CA;
 	color: #FFF;
+}
+
+/*header styling*/
+
+.user-preferences{
+	float: right;
+}
+
+
+/*headlines slider styling*/
+
+.headlines {
+	background-image: url("../resources/img/slider/custom-experience.jpg");
+	color: #FFF;
+}
+
+.slider-nav div {
+	background: #E5E5E5;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin: 0.2rem;
+	border-radius: 20%;
+}
+
+.slider-nav .checked {
+
+	background: #2E95CA
+
+}
+
+/*slider functionality*/
+
+.slider-nav li:first-child:target {
+	background-image: url("../resources/img/slider/custom-experience.jpg");
+}
+.slider-nav li:nth-child(2):target {
+	background-image: url("../resources/img/slider/digital-services.png");
+}
+.slider-nav li:nth-child(3):target {
+	background-image: url("../resources/img/slider/evolve-to-ip4g.png");
+}
+.slider-nav li:nth-child(4):target {
+	background-image: url("../resources/img/slider/smartly-monetize.png");
+}
+
+
+.headline-list li {
+	display: inline-block;
 }
 
 .headlines-list li:nth-child(1) {
