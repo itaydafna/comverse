@@ -21,8 +21,13 @@ a {
 
 /*header styling*/
 
-.user-preferences{
+.user-preferences {
 	float: right;
+	font-size: 1.30rem;
+}
+
+.site-navigation {
+	font-size: 1.35rem;
 }
 
 
@@ -31,7 +36,20 @@ a {
 .headlines {
 	background-image: url("../resources/img/slider/custom-experience.jpg");
 	color: #FFF;
+	font-weight: 100;
 }
+
+.headlines h1 {
+	font-size: 3.3rem;
+}
+
+.healines strong {
+	font-weight: 800;
+}
+
+.slider-nav li {
+	display: inline-block;
+} 
 
 .slider-nav div {
 	background: #E5E5E5;
