@@ -60,27 +60,58 @@ a {
 	border-radius: 20%;
 }
 
-.slider-nav .checked {
-
-	background: #2E95CA
-
+.headlines-list {
+	display: inline-block;
 }
+
+.headline {
+	display: inline-block;
+	text-align: center;
+}
+
 
 /*slider functionality*/
 
-.slider-nav li:first-child:target {
-	background-image: url("../resources/img/slider/custom-experience.jpg");
-}
-.slider-nav li:nth-child(2):target {
-	background-image: url("../resources/img/slider/digital-services.png");
-}
-.slider-nav li:nth-child(3):target {
-	background-image: url("../resources/img/slider/evolve-to-ip4g.png");
-}
-.slider-nav li:nth-child(4):target {
-	background-image: url("../resources/img/slider/smartly-monetize.png");
+.slider-target {
+	display: none;
 }
 
+#st1:target~.headlines {
+	background-image: url("../resources/img/slider/custom-experience.jpg");
+	background-size: 100% auto;
+}
+#st1:target~.headlines .slider-nav li:nth-child(1) div {
+	background: #2E95CA;
+}
+
+#st2:target~.headlines {
+	background-image: url("../resources/img/slider/digital-services.png");
+	background-size: 100% auto;
+}
+
+#st2:target~.headlines .slider-nav li:nth-child(2) div {
+	background: #2E95CA;
+}
+
+#st3:target~.headlines {
+	background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");
+	background-size: 100% auto;
+}
+
+#st3:target~.headlines .slider-nav li:nth-child(3) div {
+	background: #2E95CA;
+}
+
+#st4:target~.headlines {
+	background-image: url("../resources/img/slider/smartly-monetize.jpg");
+	background-size: 100% auto;
+}
+
+#st4:target~.headlines .slider-nav li:nth-child(4) div {
+	background: #2E95CA;
+}
+
+/*---- end of slider functionality ----*/
 
 .headline-list li {
 	display: inline-block;
