@@ -115,6 +115,7 @@ a {
 
 .headline-list li {
 	display: inline-block;
+	margin: 7rem;
 }
 
 .headlines-list li:nth-child(1) {
@@ -137,6 +138,7 @@ a {
 
 .events {
 	background-image: url("../resources/img/backgrounds/news-and-events-bg.jpg");
+	background-size: 100% auto;
 	color: #FFF;
 }
 
