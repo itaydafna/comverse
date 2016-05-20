@@ -1,20 +1,18 @@
-/*general styling*/
 
+/*!!!!!!!!!!!!!!!!!!!*/
+/*!*general styling*!*/
+/*!!!!!!!!!!!!!!!!!!!*/
 html {
 	font-family: "open sans" sans-serif;
-	font-size: 62.5%;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
+	font-size: 62.5%;
 }
 
-*
-
-,
-
+*,
 *:before,
-
 *:after {
-	box-sizing:inherit;
+	box-sizing: inherit;
 }
 
 ul {
@@ -22,7 +20,7 @@ ul {
 }
 
 a {
-	color:inherit;
+	color: inherit;
 	text-decoration: none;
 }
 
@@ -31,7 +29,35 @@ a {
 	color: #FFF;
 }
 
-/*header styling*/
+.clearfix:after {
+
+	content:'';
+
+	display:block;
+
+	clear:both;
+
+}
+
+/*aligning all the content to the center of the page*/
+header,
+.headlines,
+.solutions,
+.events,
+.success-stories,
+footer{
+	padding: 0 25%;
+}
+
+
+/*!!!!!!!!!!!!!!!!!*/
+/*!*header styling*!*/
+/*!!!!!!!!!!!!!!!!!*/
+
+header img[src*="comverse-logo"] {
+	display: inline-block;
+	float: left;
+}
 
 .user-preferences {
 	float: right;
@@ -39,11 +65,21 @@ a {
 }
 
 .site-navigation {
-	font-size: 1.35rem;
+	display: inline-block;
+	font-size: 1.2rem;
+	float: left;
 }
 
+.site-navigation li {
+	display: inline-block;
+	float: left;
+	vertical-align: text-bottom;
+}
 
-/*headlines slider styling*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!*headlines slider styling*!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 .headlines {
 	background-image: url("../resources/img/slider/custom-experience.jpg");
@@ -52,7 +88,7 @@ a {
 }
 
 .headlines h1 {
-	font-size: 3.3rem;
+	font-size: 3.5rem;
 }
 
 .healines strong {
@@ -142,7 +178,7 @@ a {
 	background: hsla(24, 100%, 55%,0.7);
 }
 
-.services,
+.solutions,
 .events .date {
 	color:#FFF;
 	background: #48A6CB;
