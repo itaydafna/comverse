@@ -57,6 +57,7 @@ footer{
 header img[src*="comverse-logo"] {
 	display: inline-block;
 	float: left;
+	position: relative;
 }
 
 .user-preferences {
@@ -64,61 +65,21 @@ header img[src*="comverse-logo"] {
 	font-size: 1.30rem;
 }
 
-.site-navigation {
+nav {
 	display: inline-block;
 	font-size: 1.2rem;
 	float: left;
 }
 
-.site-navigation li {
+nav li {
 	display: inline-block;
 	float: left;
 	vertical-align: text-bottom;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/*!*headlines slider styling*!*/
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-.headlines {
-	background-image: url("../resources/img/slider/custom-experience.jpg");
-	color: #FFF;
-	font-weight: 100;
-}
-
-.headlines h1 {
-	font-size: 3.5rem;
-}
-
-.healines strong {
-	font-weight: 800;
-}
-
-.slider-nav li {
-	display: inline-block;
-} 
-
-.slider-nav div {
-	background: #E5E5E5;
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	margin: 0.2rem;
-	border-radius: 20%;
-}
-
-.headlines-list {
-	display: inline-block;
-}
-
-.headline {
-	display: inline-block;
-	text-align: center;
-}
-
-
-/*slider functionality*/
+/*!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!*slider functionality*!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .slider-target {
 	display: none;
@@ -161,10 +122,80 @@ header img[src*="comverse-logo"] {
 
 /*---- end of slider functionality ----*/
 
-.headline-list li {
-	display: inline-block;
-	margin: 7rem;
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!*headlines slider styling*!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.headlines {
+	background-image: url("../resources/img/slider/custom-experience.jpg");
+	color: #FFF;
+	font-weight: 100;
 }
+.headlines h1 {
+	font-size: 3.6rem;
+	font-weight: 100;
+}
+
+.headlines strong {
+	font-weight: 500;
+}
+
+.headlines h3 {
+	font-size: 1.9rem;
+	font-weight: 100;
+	line-height: 1.5em;
+}
+
+.headline h2 {
+	font-size: 2.1rem;
+	font-weight: 200;
+}
+
+.headline span {
+	font-size: 1.5rem;
+}
+
+.slider-nav ul {
+	padding: 0;
+}
+
+.slider-nav li {
+	display: inline-block;
+}
+
+
+.slider-nav div {
+	background: #E5E5E5;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin: 0.2rem;
+	border-radius: 20%;
+}
+
+
+.headlines-list {
+	display: inline-block;
+	padding: 0;
+}
+
+.headlines-list li {
+	display: inline-block;
+	float: left;
+	width: 30%;
+	height: 16em;
+	border-radius: 3%;
+}
+
+.headline {
+	display: inline-block;
+	text-align: left;
+	padding: 5%;
+}
+
 
 .headlines-list li:nth-child(1) {
 	background: hsla(330, 94%, 62%,0.7);
@@ -172,6 +203,7 @@ header img[src*="comverse-logo"] {
 
 .headlines-list li:nth-child(2) {
 	background: hsla(99, 54%, 49%,0.7);
+	margin: 0 3%;
 }
 
 .headlines-list li:nth-child(3) {
