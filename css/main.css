@@ -31,14 +31,15 @@ a {
 	border-radius: 6%;
 }
 
+
+.clearfix:before,
 .clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
 
-	content:'';
-
-	display:block;
-
-	clear:both;
-
+.clearfix:after {
+	clear: both;
 }
 
 /*aligning all the content to the center of the page*/
@@ -51,7 +52,6 @@ footer{
 	padding: 0 25%;
 }
 
-
 /*!!!!!!!!!!!!!!!!!*/
 /*!*header styling*!*/
 /*!!!!!!!!!!!!!!!!!*/
@@ -60,12 +60,13 @@ footer{
 header{
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
+    position: relative;
 }
 
 header img[src*="comverse-logo"] {
 	display: inline-block;
 	float: left;
-	position: relative;
+
 }
 
 .user-preferences {
@@ -82,7 +83,7 @@ nav {
 nav li {
 	display: inline-block;
 	float: left;
-	vertical-align: text-bottom;
+    vertical-align: bottom;
 }
 
 nav li:nth-child(-n+3):after {
@@ -109,7 +110,9 @@ header form {
 
 #st1:target~.headlines {
 	background-image: url("../resources/img/slider/custom-experience.jpg");
-	background-size: 100% auto;
+	background-size: cover;
+	background-position: 50% 0;
+	background-attachment: fixed;
 }
 #st1:target~.headlines .slider-nav li:nth-child(1) div {
 	background: #2E95CA;
@@ -117,7 +120,9 @@ header form {
 
 #st2:target~.headlines {
 	background-image: url("../resources/img/slider/digital-services.png");
-	background-size: 100% auto;
+	background-size: cover;
+	background-position: 50% 0;
+	background-attachment: fixed;
 }
 
 #st2:target~.headlines .slider-nav li:nth-child(2) div {
@@ -126,7 +131,9 @@ header form {
 
 #st3:target~.headlines {
 	background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");
-	background-size: 100% auto;
+	background-size: cover;
+	background-position: 50% 0;
+	background-attachment: fixed;
 }
 
 #st3:target~.headlines .slider-nav li:nth-child(3) div {
@@ -135,7 +142,9 @@ header form {
 
 #st4:target~.headlines {
 	background-image: url("../resources/img/slider/smartly-monetize.jpg");
-	background-size: 100% auto;
+	background-size: cover;
+	background-position: 50% 0;
+	background-attachment: fixed;
 }
 
 #st4:target~.headlines .slider-nav li:nth-child(4) div {
@@ -154,9 +163,11 @@ header form {
 .headlines {
 	background: url("../resources/img/slider/custom-experience.jpg") no-repeat;
 	background-size: cover;
+	background-position: 50% 0;
 	background-attachment: fixed;
 	color: #FFF;
 	font-weight: 100;
+    padding-bottom:2rem;
 }
 .headlines h1 {
 	font-size: 3.6rem;
@@ -209,6 +220,7 @@ header form {
 .headlines-list {
 	display: inline-block;
 	padding: 0;
+    margin: 0;
 }
 
 .headlines-list li {
@@ -279,8 +291,8 @@ header form {
 
 
 .solutions {
-	color:#FFF;
-	background: url("../resources/img/backgrounds/solutions-bg.png"), #48A6CB;
+    color: #FFF;
+    background: url("../resources/img/backgrounds/solutions-bg.png"), #48A6CB;
 }
 
 
@@ -293,25 +305,76 @@ header form {
 	padding-bottom: 0.4em;
 }
 
-.services-list li {
-	float: left;
+.solutions-list {
+
+    display: inline-block;
+    padding: 0 auto;
 }
 
-.services-list li:last-child {
-	clear: both;
+.solutions-list li {
+	float: left;
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.solutions button {
+    width: 15em;
+    display: inline-block;
+    margin: 0 auto 2rem;
+
 }
 
 /*end of solutions section styling*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*Events section styling*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 .events {
 	background: url("../resources/img/backgrounds/news-and-events-bg.jpg") no-repeat;
 	background-size: cover;
+	background-position: 50% 0;
 	background-attachment: fixed;
 	color: #FFF;
 }
 
 
+.events h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.4em;
+    padding-bottom: 0.4em;
+}
+
+.events-list {
+    width: 80%;
+    margin: 0;
+    padding: auto;
+}
+
+.events-list li {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 16em;
+}
+
+.events-list li:nth-child(2) {
+    margin: 0 3%;
+}
+.events-list h3 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: left;
+    margin: 1em 0;
+}
+
 .news div {
-	background: hsla(28, 13%, 65%,0.7);
+	background: hsla(27, 13%, 85%,0.7);
 	color:black;
 }
 
