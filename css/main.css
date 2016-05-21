@@ -17,6 +17,7 @@ html {
 
 ul {
 	list-style-type: none;
+    padding:0;
 }
 
 a {
@@ -49,7 +50,7 @@ header,
 .events,
 .success-stories,
 footer{
-	padding: 0 25%;
+	padding: 0 15%;
 }
 
 /*!!!!!!!!!!!!!!!!!*/
@@ -198,10 +199,6 @@ header form {
 	font-size: 1.5rem;
 }
 
-.slider-nav ul {
-	padding: 0;
-}
-
 .slider-nav li {
 	display: inline-block;
 }
@@ -216,10 +213,12 @@ header form {
 	border-radius: 20%;
 }
 
+.slider-nav div:hover {
+    background: #2E95CA;
+}
 
 .headlines-list {
 	display: inline-block;
-	padding: 0;
     margin: 0;
 }
 
@@ -238,7 +237,7 @@ header form {
 }
 
 .headlines-list li:nth-child(1) {
-	background: rgba(250, 66, 158,0.9);
+	background: rgba(250, 66, 158,0.85);
 }
 
 .headlines-list li:nth-child(1):hover {
@@ -246,7 +245,7 @@ header form {
 }
 
 .headlines-list li:nth-child(2) {
-	background: rgba(104, 192, 56, 0.9);
+	background: rgba(104, 192, 56, 0.85);
 	margin: 0 3%;
 }
 
@@ -256,7 +255,7 @@ header form {
 
 
 .headlines-list li:nth-child(3){
-	background: rgba(225, 116, 20, 0.9);
+	background: rgba(225, 116, 20, 0.85);
 }
 
 .headlines-list li:nth-child(3):hover {
@@ -413,9 +412,9 @@ header form {
 }
 
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*success-stories section styling*/
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
 .success-stories {
@@ -437,10 +436,23 @@ header form {
     float: left;
 }
 
+.stories-list li:nth-child(-n+2) {
+    width: 35%;
+}
+
+.stories-list li:last-child {
+    width: 20%;
+}
 
 .success-quote {
 	background: #fff;
 	color: #616161;
+}
+
+.brand:hover {
+    background: url(../resources/img/success-stories/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg);
+    position: relative;
+    z-index: 10;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -452,12 +464,22 @@ footer {
 	background: #2A2A29;
 }
 
-.site-sections ul {
+.site-sections,
+.site-sections>li {
+    display: inline-block;
 	float: left;
+    padding:0;
+    margin: 0;
+    text-align: left;
 }
 
-.policies {
-	float: left;
+.site-sections>ul {
+    display: inline-block;
+    width: 30%;
+}
+
+.site-sections h4 {
+    font-size: 1rem;
 }
 
 footer aside {
@@ -465,10 +487,30 @@ footer aside {
 	float: right;
 	height: 100%;
 }
-.policies{
-	color: #737373;
+
+.social-media li {
+    display: inline-block;
+    float: left;
 }
 
 footer aside h2 {
 	color: #4C9EC6;
+}
+
+.policies{
+    color: #737373;
+}
+
+.policies {
+    clear:left;
+    float: left;
+}
+
+.policies span:first-child:after {
+    content: "";
+    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
+    display: inline-block;
+    height: 20px;
+    width: 2px;
+    margin: 0 1em;
 }
