@@ -373,24 +373,32 @@ header form {
     margin: 1em 0;
 }
 
+
+
 .news div {
-	background: hsla(27, 13%, 85%,0.7);
-	color:black;
+    background: hsla(27, 13%, 85%,0.7);
+}
+
+.news div:not(.date):hover {
+    background: hsl(27, 13%, 85%);
+    color:black;
 }
 
 .events .date {
     background: #39C;
+    display: inline-block;
+    float:left;
+    width: 24%;
+    height: 100%;
     color: #FFF;
+    margin:1em 1em;
 }
 
 .events .date span {
     display: block;
-}
-.events .date span:first-child{
-    font-size: 4.5rem;
-    border-bottom: 1.5px  dotted #fff;
     text-align: center;
 }
+
 
 .events .date span:first-child {
     font-size: 4.5rem;
@@ -398,12 +406,37 @@ header form {
     text-align: center;
 }
 
+.events .date span:last-child {
+    font-size: 1.6rem;
+    border-bottom: 1px #fff dotted;
+    text-align: center;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*success-stories section styling*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 
 .success-stories {
 	background: #ECECEC;
 	color:#565656;
 }
+
+.success-stories h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.4em;
+    padding-bottom: 0.4em;
+}
+
+.stories-list li {
+    display: inline-block;
+    float: left;
+}
+
 
 .success-quote {
 	background: #fff;
