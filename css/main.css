@@ -378,6 +378,28 @@ header form {
 	color:black;
 }
 
+.events .date {
+    background: #39C;
+    color: #FFF;
+}
+
+.events .date span {
+    display: block;
+}
+.events .date span:first-child{
+    font-size: 4.5rem;
+    border-bottom: 1.5px  dotted #fff;
+    text-align: center;
+}
+
+.events .date span:first-child {
+    font-size: 4.5rem;
+    border-bottom: 1px #fff dotted;
+    text-align: center;
+}
+
+
+
 .success-stories {
 	background: #ECECEC;
 	color:#565656;
