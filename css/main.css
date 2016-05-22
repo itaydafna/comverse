@@ -18,6 +18,7 @@ html {
 ul {
 	list-style-type: none;
     padding:0;
+    margin:0;
 }
 
 a {
@@ -58,17 +59,18 @@ footer{
 /*!!!!!!!!!!!!!!!!!*/
 
 
-header{
+header {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
     position: relative;
 }
 
-header img[src*="comverse-logo"] {
-	display: inline-block;
-	float: left;
-
+header .comverse-logo {
+    display: inline-block;
+    /*float: left;*/
 }
+
+
 
 .user-preferences {
 	float: right;
@@ -78,22 +80,23 @@ header img[src*="comverse-logo"] {
 nav {
 	display: inline-block;
 	font-size: 1.2rem;
-	float: left;
+	vertical-align: bottom;
 }
 
 nav li {
 	display: inline-block;
-	float: left;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
+
 
 nav li:nth-child(-n+3):after {
 	content: "";
+    display: inline-block;
+    vertical-align: middle;
 	background: url('../resources/img/icons/search_line_devider.png') no-repeat;
-	display: inline-block;
-	height: 2em;
-	width: 1em;
-	margin: 0 1em;
+	height: 20px;
+	width: 1px;
+	margin: 0 0.7em;
 }
 
 header form {
@@ -359,7 +362,7 @@ header form {
     display: inline-block;
     float: left;
     width: 30%;
-    height: 16em;
+    height: 30em;
 }
 
 .events-list li:nth-child(2) {
@@ -508,9 +511,17 @@ footer aside h2 {
 
 .policies span:first-child:after {
     content: "";
-    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
     display: inline-block;
+    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
     height: 20px;
-    width: 2px;
+    width: 1px;
     margin: 0 1em;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*positioning assistance*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+    header * {
+border: 1px solid red;
 }
