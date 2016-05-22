@@ -62,46 +62,46 @@ footer{
 header {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
-    position: relative;
 }
 
-header .comverse-logo {
+.comverse-logo {
     display: inline-block;
-    /*float: left;*/
-}
-
-
-
-.user-preferences {
-	float: right;
-	font-size: 1.30rem;
+    vertical-align: bottom;
 }
 
 nav {
-	display: inline-block;
-	font-size: 1.2rem;
-	vertical-align: bottom;
+    display: inline-block;
+    font-size: 1.25rem;
+    vertical-align: bottom;
 }
+
+
+.user-preferences {
+    display: inline-block;
+    vertical-align: bottom;
+	font-size: 1.30rem;
+}
+
+
 
 nav li {
 	display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 
 nav li:nth-child(-n+3):after {
 	content: "";
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
 	background: url('../resources/img/icons/search_line_devider.png') no-repeat;
 	height: 20px;
 	width: 1px;
 	margin: 0 0.7em;
 }
 
-header form {
-	float: right;
-}
+
+
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -522,6 +522,6 @@ footer aside h2 {
 /*positioning assistance*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-    header * {
+.user-preferences {
 border: 1px solid red;
 }
