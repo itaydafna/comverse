@@ -194,12 +194,22 @@ nav li:nth-child(-n+3):after {
 }
 
 .headline h2 {
-	font-size: 2.1rem;
+	font-size: 2.3rem;
 	font-weight: 200;
 }
 
 .headline span {
 	font-size: 1.5rem;
+}
+
+.headline span:before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 26px;
+    width: 30px;
+    margin-right: 5px;
+    background: url("../resources/img/icons/link-icon-image.png") no-repeat;
 }
 
 .slider-nav li {
@@ -277,7 +287,6 @@ nav li:nth-child(-n+3):after {
 
 .headlines button::after {
 	content: "";
-	display: block;
 	display: inline-block;
 	float: right;
 	background: url("../resources/img/icons/btnArrow.png") no-repeat;
@@ -330,6 +339,8 @@ nav li:nth-child(-n+3):after {
 }
 
 /*end of solutions section styling*/
+
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Events section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -414,6 +425,51 @@ nav li:nth-child(-n+3):after {
     text-align: center;
 }
 
+.all-news:before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 22px;
+    width: 24px;
+    margin:2px 2px 0 0;
+    background: url("../resources/img/events/eventListIconNews.png") no-repeat;
+}
+.all-news:hover {
+    color: black;
+}
+.all-news:hover:before {
+    background: url("../resources/img/events/eventListIconNews_hover.png") no-repeat;
+}
+.all-events:before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 22px;
+    width: 24px;
+    margin:2px 2px 0 0;
+    background: url("../resources/img/events/eventListIconEvents.png") no-repeat;
+}
+.all-events:hover {
+    color: black;
+}
+.all-events:hover:before {
+    background: url("../resources/img/events/eventListIconEvents_hover.png") no-repeat;
+}
+.press:before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 22px;
+    width: 24px;
+    margin:2px 2px 0 0;
+    background: url("../resources/img/events/eventListIconPress.png") no-repeat;
+}
+.press:hover {
+    color: black;
+}
+.press:hover:before {
+    background: url("../resources/img/events/eventListIconPress_hover.png") no-repeat;
+}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*success-stories section styling*/
