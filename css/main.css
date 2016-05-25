@@ -1,47 +1,45 @@
-
 /*!!!!!!!!!!!!!!!!!!!*/
 /*!*general styling*!*/
 /*!!!!!!!!!!!!!!!!!!!*/
 html {
-	font-family: "open sans" sans-serif;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	font-size: 62.5%;
+    font-family: "open sans" sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 ul {
-	list-style-type: none;
-    padding:0;
-    margin:0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .gen-button {
-	background: #3096CA;
-	color: #FFF;
-	border: none;
-	border-radius: 6%;
+    background: #3096CA;
+    color: #FFF;
+    border: none;
+    border-radius: 6%;
 }
-
 
 .clearfix:before,
 .clearfix:after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
-	clear: both;
+    clear: both;
 }
 
 /*aligning all the content to the center of the page*/
@@ -50,20 +48,18 @@ header,
 .solutions,
 .events,
 .success-stories,
-footer{
-	padding: 0 15%;
+footer {
+    padding: 0 15%;
 }
 
 /*!!!!!!!!!!!!!!!!!*/
 /*!*header styling*!*/
 /*!!!!!!!!!!!!!!!!!*/
 
-
 header {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
-
 
 .comverse-logo {
     display: inline-block;
@@ -77,31 +73,27 @@ nav {
     margin: 0 5em 0 2em;
 }
 
-
 .user-preferences {
     display: inline-block;
     vertical-align: bottom;
-	font-size: 1.30rem;
+    font-size: 1.30rem;
 }
-
-
 
 nav li {
-	display: inline-block;
+    display: inline-block;
     vertical-align: bottom;
 }
-
 
 nav li:nth-child(-n+3):after,
 .searchbox button:before,
 .login:before {
-	content: "";
+    content: "";
     display: inline-block;
     vertical-align: bottom;
-	background: url('../resources/img/icons/search_line_devider.png') no-repeat;
-	height: 20px;
-	width: 1px;
-	margin: 0 0.5em;
+    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
+    height: 20px;
+    width: 1px;
+    margin: 0 0.5em;
 }
 
 /*searcch and login styling*/
@@ -137,107 +129,105 @@ header form {
 }
 
 .searchbox input:focus,
-.searchbox button:focus{
+.searchbox button:focus {
     outline: 0;
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!*slider functionality*!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .slider-target {
-	display: none;
+    display: none;
 }
 
-#st1:target~.headlines {
-	background-image: url("../resources/img/slider/custom-experience.jpg");
-	background-size: cover;
-	background-position: 50% 0;
-	background-attachment: fixed;
-}
-#st1:target~.headlines .slider-nav li:nth-child(1) div {
-	background: #2E95CA;
+#st1:target ~ .headlines {
+    background-image: url("../resources/img/slider/custom-experience.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
 }
 
-#st2:target~.headlines {
-	background-image: url("../resources/img/slider/digital-services.png");
-	background-size: cover;
-	background-position: 50% 0;
-	background-attachment: fixed;
+#st1:target ~ .headlines .slider-nav li:nth-child(1) div {
+    background: #2E95CA;
 }
 
-#st2:target~.headlines .slider-nav li:nth-child(2) div {
-	background: #2E95CA;
+#st2:target ~ .headlines {
+    background-image: url("../resources/img/slider/digital-services.png");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
 }
 
-#st3:target~.headlines {
-	background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");
-	background-size: cover;
-	background-position: 50% 0;
-	background-attachment: fixed;
+#st2:target ~ .headlines .slider-nav li:nth-child(2) div {
+    background: #2E95CA;
 }
 
-#st3:target~.headlines .slider-nav li:nth-child(3) div {
-	background: #2E95CA;
+#st3:target ~ .headlines {
+    background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
 }
 
-#st4:target~.headlines {
-	background-image: url("../resources/img/slider/smartly-monetize.jpg");
-	background-size: cover;
-	background-position: 50% 0;
-	background-attachment: fixed;
+#st3:target ~ .headlines .slider-nav li:nth-child(3) div {
+    background: #2E95CA;
 }
 
-#st4:target~.headlines .slider-nav li:nth-child(4) div {
-	background: #2E95CA;
+#st4:target ~ .headlines {
+    background-image: url("../resources/img/slider/smartly-monetize.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+}
+
+#st4:target ~ .headlines .slider-nav li:nth-child(4) div {
+    background: #2E95CA;
 }
 
 /*---- end of slider functionality ----*/
-
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!*headlines slider styling*!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-
 .headlines {
-	background: url("../resources/img/slider/custom-experience.jpg") no-repeat;
-	background-size: cover;
-	background-position: 50% 0;
-	background-attachment: fixed;
-	color: #FFF;
-	font-weight: 100;
-    padding-bottom:2rem;
+    background: url("../resources/img/slider/custom-experience.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+    color: #FFF;
+    font-weight: 100;
+    padding-bottom: 2rem;
 }
+
 .headlines h1 {
-	font-size: 3.6rem;
-	font-weight: 100;
-	margin: 0;
-	padding-top: 1.3em;
-	padding-bottom: 0.4em;
+    font-size: 3.6rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.3em;
+    padding-bottom: 0.4em;
 }
 
 .headlines strong {
-	font-weight: 500;
+    font-weight: 500;
 }
 
 .headlines h3 {
-	font-size: 1.9rem;
-	font-weight: 100;
-	line-height: 1.5em;
-	margin: 0;
-	padding-bottom: 0.6em;
+    font-size: 1.9rem;
+    font-weight: 100;
+    line-height: 1.5em;
+    margin: 0;
+    padding-bottom: 0.6em;
 }
 
 .headline h2 {
-	font-size: 2.3rem;
-	font-weight: 200;
+    font-size: 2.3rem;
+    font-weight: 200;
 }
 
 .headline span {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .headline span:before {
@@ -255,17 +245,16 @@ header form {
 }
 
 .slider-nav li {
-	display: inline-block;
+    display: inline-block;
 }
 
-
 .slider-nav div {
-	background: #E5E5E5;
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	margin: 0.2rem;
-	border-radius: 20%;
+    background: #E5E5E5;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.2rem;
+    border-radius: 20%;
 }
 
 .slider-nav div:hover {
@@ -273,89 +262,82 @@ header form {
 }
 
 .headlines-list {
-	display: inline-block;
+    display: inline-block;
     margin: 0;
 }
 
 .headlines-list li {
-	display: inline-block;
-	float: left;
-	width: 30%;
-	height: 18em;
-	border-radius: 3%;
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 18em;
+    border-radius: 3%;
 }
 
 .headline {
-	display: inline-block;
-	text-align: left;
-	padding: 0.7em 2em
+    display: inline-block;
+    text-align: left;
+    padding: 0.7em 2em
 }
 
 .headlines-list li:nth-child(1) {
-	background: rgba(250, 66, 158,0.85);
+    background: rgba(250, 66, 158, 0.85);
 }
 
 .headlines-list li:nth-child(1):hover {
-	background: rgb(250, 66, 158);
+    background: rgb(250, 66, 158);
 }
 
 .headlines-list li:nth-child(2) {
-	background: rgba(104, 192, 56, 0.85);
-	margin: 0 3%;
+    background: rgba(104, 192, 56, 0.85);
+    margin: 0 3%;
 }
 
 .headlines-list li:nth-child(2):hover {
-	background: rgb(104, 192, 56);
+    background: rgb(104, 192, 56);
 }
 
-
-.headlines-list li:nth-child(3){
-	background: rgba(225, 116, 20, 0.85);
+.headlines-list li:nth-child(3) {
+    background: rgba(225, 116, 20, 0.85);
 }
 
 .headlines-list li:nth-child(3):hover {
-	background: rgb(225, 116, 20);
+    background: rgb(225, 116, 20);
 }
 
-
-
 .headlines button {
-	font-size: 1.3rem;
-	font-weight: 100;
-	text-transform: uppercase;
-	padding: 0.5em;
-	text-align: left;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: left;
 }
 
 .headlines button::after {
-	content: "";
-	display: inline-block;
-	float: right;
-	background: url("../resources/img/icons/btnArrow.png") no-repeat;
-	width: 5em;
-	margin-left: 2rem;
+    content: "";
+    display: inline-block;
+    float: right;
+    background: url("../resources/img/icons/btnArrow.png") no-repeat;
+    width: 5em;
+    margin-left: 2rem;
 }
-
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*solutions section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
 
 .solutions {
     color: #FFF;
     background: url("../resources/img/backgrounds/solutions-bg.png"), #48A6CB;
 }
 
-
 .solutions h1 {
-	text-align: center;
-	font-size: 3.7rem;
-	font-weight: 100;
-	margin: 0;
-	padding-top: 1.4em;
-	padding-bottom: 0.4em;
+    text-align: center;
+    font-size: 3.7rem;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1.4em;
+    padding-bottom: 0.4em;
 }
 
 .solutions-list {
@@ -365,7 +347,7 @@ header form {
 }
 
 .solutions-list li {
-	float: left;
+    float: left;
     display: inline-block;
     width: 14%;
     text-align: center;
@@ -382,19 +364,17 @@ header form {
 
 /*end of solutions section styling*/
 
-
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Events section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .events {
-	background: url("../resources/img/backgrounds/news-and-events-bg.jpg") no-repeat;
-	background-size: cover;
-	background-position: 50% 0;
-	background-attachment: fixed;
-	color: #FFF;
+    background: url("../resources/img/backgrounds/news-and-events-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+    color: #FFF;
 }
-
 
 .events h1 {
     text-align: center;
@@ -421,6 +401,7 @@ header form {
 .events-list li:nth-child(2) {
     margin: 0 3%;
 }
+
 .events-list h3 {
     font-size: 2.5rem;
     font-weight: 100;
@@ -428,36 +409,34 @@ header form {
     margin: 1em 0;
 }
 
-
 .news p {
     font-size: 1.5rem;
     color: black;
 }
 
 .news div {
-    background: hsla(27, 13%, 85%,0.7);
+    background: hsla(27, 13%, 85%, 0.7);
 }
 
 .news div:not(.date):hover {
     background: hsl(27, 13%, 85%);
-    color:black;
+    color: black;
 }
 
 .events .date {
     background: #39C;
     display: inline-block;
-    float:left;
+    float: left;
     width: 24%;
     height: 100%;
     color: #FFF;
-    margin:1em 1em;
+    margin: 1em 1em;
 }
 
 .events .date span {
     display: block;
     text-align: center;
 }
-
 
 .events .date span:first-child {
     font-size: 4.5rem;
@@ -470,7 +449,7 @@ header form {
     text-align: center;
 }
 
-.news>a>span {
+.news > a > span {
     font-size: 1.2rem;
     font-weight: 100;
 }
@@ -481,42 +460,50 @@ header form {
     vertical-align: bottom;
     height: 22px;
     width: 24px;
-    margin:2px 2px 0 0;
+    margin: 2px 2px 0 0;
     background: url("../resources/img/events/eventListIconNews.png") no-repeat;
 }
+
 .all-news:hover {
     color: black;
 }
+
 .all-news:hover:before {
     background: url("../resources/img/events/eventListIconNews_hover.png") no-repeat;
 }
+
 .all-events:before {
     content: "";
     display: inline-block;
     vertical-align: bottom;
     height: 22px;
     width: 24px;
-    margin:2px 2px 0 0;
+    margin: 2px 2px 0 0;
     background: url("../resources/img/events/eventListIconEvents.png") no-repeat;
 }
+
 .all-events:hover {
     color: black;
 }
+
 .all-events:hover:before {
     background: url("../resources/img/events/eventListIconEvents_hover.png") no-repeat;
 }
+
 .press:before {
     content: "";
     display: inline-block;
     vertical-align: bottom;
     height: 22px;
     width: 24px;
-    margin:2px 2px 0 0;
+    margin: 2px 2px 0 0;
     background: url("../resources/img/events/eventListIconPress.png") no-repeat;
 }
+
 .press:hover {
     color: black;
 }
+
 .press:hover:before {
     background: url("../resources/img/events/eventListIconPress_hover.png") no-repeat;
 }
@@ -525,10 +512,9 @@ header form {
 /*success-stories section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-
 .success-stories {
-	background: #ECECEC;
-	color:#565656;
+    background: #ECECEC;
+    color: #565656;
 }
 
 .success-stories h1 {
@@ -554,8 +540,8 @@ header form {
 }
 
 .success-quote {
-	background: #fff;
-	color: #616161;
+    background: #fff;
+    color: #616161;
 }
 
 .brand:hover {
@@ -569,20 +555,20 @@ header form {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 footer {
-	color: #E6E6E6;
-	background: #2A2A29;
+    color: #E6E6E6;
+    background: #2A2A29;
 }
 
 .site-sections,
-.site-sections>li {
+.site-sections > li {
     display: inline-block;
-	float: left;
-    padding:0;
+    float: left;
+    padding: 0;
     margin: 0;
     text-align: left;
 }
 
-.site-sections>ul {
+.site-sections > ul {
     display: inline-block;
     width: 30%;
 }
@@ -592,9 +578,9 @@ footer {
 }
 
 footer aside {
-	background: #3C3C3C;
-	float: right;
-	height: 100%;
+    background: #3C3C3C;
+    float: right;
+    height: 100%;
 }
 
 .social-media li {
@@ -603,15 +589,15 @@ footer aside {
 }
 
 footer aside h2 {
-	color: #4C9EC6;
+    color: #4C9EC6;
 }
 
-.policies{
+.policies {
     color: #737373;
 }
 
 .policies {
-    clear:left;
+    clear: left;
     float: left;
 }
 
