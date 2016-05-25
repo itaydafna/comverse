@@ -25,12 +25,7 @@ a {
     text-decoration: none;
 }
 
-.gen-button {
-    background: #3096CA;
-    color: #FFF;
-    border: none;
-    border-radius: 6%;
-}
+
 
 .clearfix:before,
 .clearfix:after {
@@ -42,14 +37,36 @@ a {
     clear: both;
 }
 
+/*-----------------------*/
+/*general button styling*/
+/*----------------------*/
+
+.gen-button {
+    background: #3096CA;
+    color: #FFF;
+    border: none;
+    border-radius: 6%;
+    position: relative;
+    padding-right: 5em;
+
+}
+
+/* button "play" icon - can be absolutely positioned based on the button*/
+.gen-button:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
+    height: 13px;
+    width: 10px;
+}
+
+
 /*aligning all the content to the center of the page*/
-header,
-.headlines,
-.solutions,
-.events,
-.success-stories,
-footer {
-    padding: 0 15%;
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
 }
 
 /*!!!!!!!!!!!!!!!!!*/
@@ -77,6 +94,7 @@ nav {
     display: inline-block;
     vertical-align: bottom;
     font-size: 1.30rem;
+    float: right;
 }
 
 nav li {
@@ -114,7 +132,7 @@ header form {
 }
 
 .searchbox button {
-    background: none;
+    background: white;
     border: none;
     position: absolute;
     z-index: 500;
@@ -230,16 +248,6 @@ header form {
     font-size: 1.5rem;
 }
 
-.headline span:before {
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    height: 26px;
-    width: 30px;
-    margin-right: 5px;
-    background: url("../resources/img/icons/link-icon-image.png") no-repeat;
-}
-
 .slider-nav {
     padding: 2em 0;
 }
@@ -340,25 +348,94 @@ header form {
     padding-bottom: 0.4em;
 }
 
-.solutions-list {
+.solutions ul {
 
     display: inline-block;
-    padding: 0 auto;
+    text-align: center;
+    cursor: pointer;
 }
 
-.solutions-list li {
-    float: left;
+.solutions li {
+    /*float: left;*/
     display: inline-block;
     width: 14%;
     text-align: center;
     font-weight: 100;
     font-size: 1.2rem;
+    vertical-align: top;
 }
+
+/*------------------------------*/
+/*slutions icons hover state*!*/
+/*------------------------------*/
+
+.solutions li:first-child div {
+    height: 63px;
+    background: url("../resources/img/solutions/solution_icon_biz-analitics.png") no-repeat;
+}
+
+.solutions li:first-child:hover div {
+    background: url("../resources/img/solutions/solution_icon_biz-analitics_hover.png") no-repeat;
+}
+
+.solutions li:nth-child(2) div {
+    height: 63px;
+    background: url("../resources/img/solutions/solution_icon_diti-cx.png") no-repeat;
+}
+
+.solutions li:nth-child(2):hover div {
+    background: url("../resources/img/solutions/solution_icon_diti-cx_hover.png") no-repeat;
+}
+
+.solutions li:nth-child(3) div {
+    height: 63px;
+    background: url("../resources/img/solutions/solution_icon_smart-money.png") no-repeat;
+}
+
+.solutions li:nth-child(3):hover div {
+    background: url("../resources/img/solutions/solution_icon_smart-money_hover.png") no-repeat;
+}
+
+.solutions li:nth-child(4) div {
+    height: 63px;
+    background: url("../resources/img/solutions/solution_icon_optimize-efficnt.png") no-repeat;
+}
+
+.solutions li:nth-child(4):hover div {
+    background: url("../resources/img/solutions/solution_icon_optimize-efficnt_hover.png") no-repeat;
+}
+
+.solutions li:nth-child(5) div {
+    height: 63px;
+    background: url("../resources/img/solutions/solution_icon_personal.png") no-repeat;
+}
+
+.solutions li:nth-child(5):hover div {
+    background: url("../resources/img/solutions/solution_icon_personal_hover.png") no-repeat;
+}
+
+
+.solutions li:last-child div {
+    height: 63px;
+    background: url("../resources/img/solutions/solution_icon_biz-transform.png") no-repeat;
+}
+
+.solutions li:last-child:hover div {
+    background: url("../resources/img/solutions/solution_icon_biz-transform_hover.png") no-repeat;
+}
+
+
+/*-----------------------*/
+/*solutions section button*/
+/*--------------------------*/
+
 
 .solutions button {
     width: 15em;
-    display: inline-block;
-    margin: 0 auto 2rem;
+    display: block;
+    margin: 1em auto 2em;
+    text-align: center;
+    font-size: 1.3rem;
 
 }
 
@@ -386,14 +463,15 @@ header form {
 }
 
 .events-list {
-    width: 80%;
     margin: 0;
     padding: auto;
+    display: inline-block;
+    text-align: center;
 }
 
 .events-list li {
     display: inline-block;
-    float: left;
+    text-align: left;
     width: 30%;
     height: 30em;
 }
@@ -449,63 +527,28 @@ header form {
     text-align: center;
 }
 
-.news > a > span {
-    font-size: 1.2rem;
-    font-weight: 100;
+
+.news i {
+    margin-right: 0.7rem;
 }
 
-.all-news:before {
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    height: 22px;
-    width: 24px;
-    margin: 2px 2px 0 0;
-    background: url("../resources/img/events/eventListIconNews.png") no-repeat;
+.news > a > span,
+.news i {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: 0.5rem;
 }
 
 .all-news:hover {
     color: black;
 }
 
-.all-news:hover:before {
-    background: url("../resources/img/events/eventListIconNews_hover.png") no-repeat;
-}
-
-.all-events:before {
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    height: 22px;
-    width: 24px;
-    margin: 2px 2px 0 0;
-    background: url("../resources/img/events/eventListIconEvents.png") no-repeat;
-}
-
 .all-events:hover {
     color: black;
 }
 
-.all-events:hover:before {
-    background: url("../resources/img/events/eventListIconEvents_hover.png") no-repeat;
-}
-
-.press:before {
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    height: 22px;
-    width: 24px;
-    margin: 2px 2px 0 0;
-    background: url("../resources/img/events/eventListIconPress.png") no-repeat;
-}
-
 .press:hover {
     color: black;
-}
-
-.press:hover:before {
-    background: url("../resources/img/events/eventListIconPress_hover.png") no-repeat;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
