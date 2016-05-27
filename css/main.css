@@ -25,8 +25,6 @@ a {
     text-decoration: none;
 }
 
-
-
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -47,8 +45,6 @@ a {
     border: none;
     border-radius: 6%;
     position: relative;
-    padding-right: 5em;
-
 }
 
 /* button "play" icon - can be absolutely positioned based on the button*/
@@ -61,7 +57,6 @@ a {
     height: 13px;
     width: 10px;
 }
-
 
 /*aligning all the content to the center of the page*/
 .wrapper {
@@ -114,7 +109,7 @@ nav li:nth-child(-n+3):after,
     margin: 0 0.5em;
 }
 
-/*searcch and login styling*/
+/*search and login styling*/
 
 header form {
     position: relative;
@@ -151,75 +146,29 @@ header form {
     outline: 0;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!*/
-/*!*slider functionality*!*/
-/*!!!!!!!!!!!!!!!!!!!!!!!*/
-
-.slider-target {
-    display: none;
-}
-
-#st1:target ~ .headlines {
-    background-image: url("../resources/img/slider/custom-experience.jpg");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
-}
-
-#st1:target ~ .headlines .slider-nav li:nth-child(1) div {
-    background: #2E95CA;
-}
-
-#st2:target ~ .headlines {
-    background-image: url("../resources/img/slider/digital-services.png");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
-}
-
-#st2:target ~ .headlines .slider-nav li:nth-child(2) div {
-    background: #2E95CA;
-}
-
-#st3:target ~ .headlines {
-    background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
-}
-
-#st3:target ~ .headlines .slider-nav li:nth-child(3) div {
-    background: #2E95CA;
-}
-
-#st4:target ~ .headlines {
-    background-image: url("../resources/img/slider/smartly-monetize.jpg");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
-}
-
-#st4:target ~ .headlines .slider-nav li:nth-child(4) div {
-    background: #2E95CA;
-}
-
-/*---- end of slider functionality ----*/
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!*headlines slider styling*!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.headlines {
-    background: url("../resources/img/slider/custom-experience.jpg") no-repeat;
+.slideshow,
+.headlines-list ul {
+    height: 560px;
+    /*this next one is temporary*/
+    overflow: hidden;
+}
+
+.slide {
     background-size: cover;
     background-position: 50% 0;
     background-attachment: fixed;
     color: #FFF;
     font-weight: 100;
     padding-bottom: 2rem;
+    height: 560px;
 }
 
-.headlines h1 {
+.slide h1 {
     font-size: 3.6rem;
     font-weight: 100;
     margin: 0;
@@ -227,17 +176,19 @@ header form {
     padding-bottom: 0.4em;
 }
 
-.headlines strong {
+.slide strong {
     font-weight: 500;
 }
 
-.headlines h3 {
+.slide h3 {
     font-size: 1.9rem;
     font-weight: 100;
     line-height: 1.5em;
     margin: 0;
     padding-bottom: 0.6em;
 }
+
+/*headlines bubbles styling*/
 
 .headline h2 {
     font-size: 2.3rem;
@@ -265,9 +216,6 @@ header form {
     border-radius: 20%;
 }
 
-.slider-nav div:hover {
-    background: #2E95CA;
-}
 
 .headlines-list {
     display: inline-block;
@@ -287,6 +235,8 @@ header form {
     text-align: left;
     padding: 0.7em 2em
 }
+
+/*headlines bubbleshover state*/
 
 .headlines-list li:nth-child(1) {
     background: rgba(250, 66, 158, 0.85);
@@ -313,7 +263,7 @@ header form {
     background: rgb(225, 116, 20);
 }
 
-.headlines button {
+.slideshow button {
     font-size: 1.3rem;
     font-weight: 100;
     text-transform: uppercase;
@@ -321,7 +271,7 @@ header form {
     text-align: left;
 }
 
-.headlines button::after {
+.slideshow button::after {
     content: "";
     display: inline-block;
     float: right;
@@ -329,6 +279,115 @@ header form {
     width: 5em;
     margin-left: 2rem;
 }
+
+
+/*-----------------------*/
+/*second slideshow trial*/
+/*-----------------------*/
+
+.slideshow-constants .wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.wheel {
+    background: url("../resources/img/slider/custom-experience.jpg") no-repeat;
+}
+
+.smartphone {
+    background: url("../resources/img/slider/digital-services.png") no-repeat;
+}
+
+.superman {
+    background: url("../resources/img/slider/evolve-to-ip4g.jpg") no-repeat;
+}
+
+.bulb {
+    background: url("../resources/img/slider/smartly-monetize.jpg") no-repeat;
+}
+
+/*positioning headlines and nav bullets realtive to the wrapper */
+
+.slideshow-constants ul {
+    position: absolute;
+}
+
+.slider-nav {
+    top: 24em;
+}
+.headlines-list {
+    top: 35em;
+}
+
+
+
+/*making target divs invisable*/
+.slider-target {
+    display: none;
+}
+
+/*slider bullet functionality and hover state*/
+
+.slider-nav div:hover {
+    background: #2E95CA;
+}
+
+#st1:target ~ .slideshow {
+    background-image: url("../resources/img/slider/custom-experience.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+}
+
+#st1:target ~ .slideshow .slider-nav li:nth-child(1) div {
+    background: #2E95CA;
+}
+
+#st2:target ~ .slideshow .slider-nav li:nth-child(2) div {
+    background: #2E95CA;
+}
+
+
+#st3:target ~ .slideshow .slider-nav li:nth-child(3) div {
+    background: #2E95CA;
+}
+
+
+#st4:target ~ .slideshow .slider-nav li:nth-child(4) div {
+    background: #2E95CA;
+}
+
+/*slides target functionality*/
+
+#st2:target ~ .slideshow {
+    background-image: url("../resources/img/slider/digital-services.png");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+}
+
+
+
+#st3:target ~ .slideshow {
+    background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+}
+
+
+#st4:target ~ .slideshow {
+    background-image: url("../resources/img/slider/smartly-monetize.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    background-attachment: fixed;
+}
+
+/*------------------------------*/
+/*end of slideshow second trial*/
+/*------------------------------*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*solutions section styling*/
@@ -414,7 +473,6 @@ header form {
     background: url("../resources/img/solutions/solution_icon_personal_hover.png") no-repeat;
 }
 
-
 .solutions li:last-child div {
     height: 63px;
     background: url("../resources/img/solutions/solution_icon_biz-transform.png") no-repeat;
@@ -424,11 +482,9 @@ header form {
     background: url("../resources/img/solutions/solution_icon_biz-transform_hover.png") no-repeat;
 }
 
-
 /*-----------------------*/
 /*solutions section button*/
 /*--------------------------*/
-
 
 .solutions button {
     width: 15em;
@@ -526,7 +582,6 @@ header form {
     font-size: 1.6rem;
     text-align: center;
 }
-
 
 .news i {
     margin-right: 0.7rem;
