@@ -146,7 +146,6 @@ header form {
     outline: 0;
 }
 
-
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!*headlines slider styling*!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -216,7 +215,6 @@ header form {
     border-radius: 20%;
 }
 
-
 .headlines-list {
     display: inline-block;
     margin: 0;
@@ -280,16 +278,15 @@ header form {
     margin-left: 2rem;
 }
 
-
 /*-----------------------*/
 /*second slideshow trial*/
 /*-----------------------*/
 
 .slideshow-constants .wrapper {
     position: relative;
-    margin: 0 auto;
 }
 
+/*setting background for slides*/
 
 .wheel {
     background: url("../resources/img/slider/custom-experience.jpg") no-repeat;
@@ -301,10 +298,17 @@ header form {
 
 .superman {
     background: url("../resources/img/slider/evolve-to-ip4g.jpg") no-repeat;
+
 }
 
 .bulb {
     background: url("../resources/img/slider/smartly-monetize.jpg") no-repeat;
+}
+
+/*making all slides apart from wheel "display: none" when not targeted*/
+
+.slide {
+    display: none;
 }
 
 /*positioning headlines and nav bullets realtive to the wrapper */
@@ -316,14 +320,13 @@ header form {
 .slider-nav {
     top: 24em;
 }
+
 .headlines-list {
     top: 35em;
 }
 
-
-
 /*making target divs invisable*/
-.slider-target {
+.slides-list li {
     display: none;
 }
 
@@ -333,61 +336,64 @@ header form {
     background: #2E95CA;
 }
 
-#st1:target ~ .slideshow {
-    background-image: url("../resources/img/slider/custom-experience.jpg");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
-}
-
-#st1:target ~ .slideshow .slider-nav li:nth-child(1) div {
+#st1:target ~ .slideshow-constants .slider-nav li:nth-child(1) div {
     background: #2E95CA;
 }
 
-#st2:target ~ .slideshow .slider-nav li:nth-child(2) div {
+#st2:target ~ .slideshow-constants .slider-nav li:nth-child(2) div {
     background: #2E95CA;
 }
 
-
-#st3:target ~ .slideshow .slider-nav li:nth-child(3) div {
+#st3:target ~ .slideshow-constants .slider-nav li:nth-child(3) div {
     background: #2E95CA;
 }
 
-
-#st4:target ~ .slideshow .slider-nav li:nth-child(4) div {
+#st4:target ~ .slideshow-constants .slider-nav li:nth-child(4) div {
     background: #2E95CA;
 }
 
 /*slides target functionality*/
 
-#st2:target ~ .slideshow {
-    background-image: url("../resources/img/slider/digital-services.png");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
+#st1:target ~ .slides-list li:first-child {
+    display: inline-block;
 }
 
-
-
-#st3:target ~ .slideshow {
-    background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
+#st2:target ~ .slides-list li:nth-child(2) {
+    display: inline-block;
 }
 
-
-#st4:target ~ .slideshow {
-    background-image: url("../resources/img/slider/smartly-monetize.jpg");
-    background-size: cover;
-    background-position: 50% 0;
-    background-attachment: fixed;
+#st3:target ~ .slides-list li:nth-child(3) {
+    display: inline-block;
 }
+
+#st4:target ~ .slides-list li:last-child {
+    display: inline-block;
+}
+
+/*#st2:target ~ .slideshow {*/
+/*background-image: url("../resources/img/slider/digital-services.png");*/
+/*background-size: cover;*/
+/*background-position: 50% 0;*/
+/*background-attachment: fixed;*/
+/*}*/
+
+/*#st3:target ~ .slideshow {*/
+/*background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");*/
+/*background-size: cover;*/
+/*background-position: 50% 0;*/
+/*background-attachment: fixed;*/
+/*}*/
+
+/*#st4:target ~ .slideshow {*/
+/*background-image: url("../resources/img/slider/smartly-monetize.jpg");*/
+/*background-size: cover;*/
+/*background-position: 50% 0;*/
+/*background-attachment: fixed;*/
+/*}*/
 
 /*------------------------------*/
 /*end of slideshow second trial*/
 /*------------------------------*/
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*solutions section styling*/
