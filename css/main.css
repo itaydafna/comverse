@@ -332,42 +332,115 @@ header form {
 
 /*slider bullet functionality and hover state*/
 
-.slider-nav div:hover {
+
+/*making first bullet display blue on page load*/
+.slider-nav li:first-child div {
     background: #2E95CA;
 }
 
-#st1:target ~ .slideshow-constants .slider-nav li:nth-child(1) div {
+/*targeting the "active" bullet*/
+#st1:target ~ main .slider-nav li:nth-child(1) div {
     background: #2E95CA;
 }
 
-#st2:target ~ .slideshow-constants .slider-nav li:nth-child(2) div {
+/*making all the rest of the bullets "not targeted" when this one is*/
+
+#st1:target ~ main .slider-nav li:not(:nth-child(1)) div {
+    background: #E5E5E5;
+}
+
+/*hover effect for the "not targeted" bullets*/
+
+#st1:target ~ main .slider-nav li:not(:nth-child(1)) div:hover {
     background: #2E95CA;
 }
 
-#st3:target ~ .slideshow-constants .slider-nav li:nth-child(3) div {
+
+#st2:target ~ main .slider-nav li:nth-child(2) div {
     background: #2E95CA;
 }
 
-#st4:target ~ .slideshow-constants .slider-nav li:nth-child(4) div {
+#st2:target ~ main .slider-nav li:not(:nth-child(2)) div {
+    background: #E5E5E5;
+}
+
+#st2:target ~ main .slider-nav li:not(:nth-child(2)) div:hover {
     background: #2E95CA;
 }
 
+#st3:target ~ main .slider-nav li:nth-child(3) div {
+    background: #2E95CA;
+}
+
+#st3:target ~ main .slider-nav li:not(:nth-child(3)) div {
+    background: #E5E5E5;
+}
+
+#st3:target ~ main .slider-nav li:not(:nth-child(3)) div:hover {
+    background: #2E95CA;
+}
+
+#st4:target ~ main .slider-nav li:nth-child(4) div {
+    background: #2E95CA;
+}
+
+#st4:target ~ main .slider-nav li:not(:nth-child(4)) div {
+    background: #E5E5E5;
+}
+
+#st4:target ~ main .slider-nav li:not(:nth-child(4)) div:hover {
+    background: #2E95CA;
+}
+
+/*slider bullet hover state*/
+.slider-nav {
+    cursor: pointer;
+}
+#bullet-hover div:hover {
+    background: #2E95CA;
+}
+
+/*----------------------------*/
 /*slides target functionality*/
+/*----------------------------*/
 
-#st1:target ~ .slides-list li:first-child {
-    display: inline-block;
+
+/*making first slide display on page load*/
+.slides-list li:first-child {
+    display: block;
 }
 
-#st2:target ~ .slides-list li:nth-child(2) {
-    display: inline-block;
+/*targeting the "active" slide*/
+#st1:target ~ main .slides-list li:first-child {
+    display: block;
+}
+/*making all the rest of the slides "no targeted" when this one is*/
+#st1:target ~ main .slides-list li:not(:first-child) {
+    display: none;
 }
 
-#st3:target ~ .slides-list li:nth-child(3) {
-    display: inline-block;
+#st2:target ~ main .slides-list li:nth-child(2) {
+    display: block;
 }
 
-#st4:target ~ .slides-list li:last-child {
-    display: inline-block;
+#st2:target ~ main .slides-list li:not(:nth-child(2)) {
+    display: none;
+}
+
+#st3:target ~ main .slides-list li:nth-child(3) {
+    display: block;
+}
+
+#st3:target ~ main .slides-list li:not(:nth-child(3)) {
+    display: none;
+}
+
+#st4:target ~ main .slides-list li:last-child {
+    display: block;
+}
+
+#st4:target ~ main .slides-list li:not(:last-child) {
+    display: none;
 }
 
 /*#st2:target ~ .slideshow {*/
