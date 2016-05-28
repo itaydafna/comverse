@@ -92,7 +92,7 @@ nav {
     float: right;
 }
 
-nav li {
+nav>ul>li {
     display: inline-block;
     vertical-align: bottom;
 }
@@ -149,8 +149,33 @@ header form {
 /*-------------------*/
 /*mega-menu styling*/
 /*-------------------*/
+
+/*absolutely postioning dorpdown menu relative to header wrapper*/
+
+header .wrapper {
+    position: relative;
+}
 .mega-menu {
     display: none;
+    position: absolute;
+    background: #fff;
+}
+/*mega-menu dropdown on hover*/
+nav>ul>li:first-child:hover .needs {
+    display: block;
+    margin: 0 auto;
+}
+
+nav>ul>li:nth-child(2):hover .protfolio {
+    display: block;
+}
+
+nav>ul>li:nth-child(3):hover .news-media {
+    display: block;
+}
+
+nav>ul>li:last-child:hover .about {
+    display: block;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -286,7 +311,7 @@ header form {
 }
 
 /*-----------------------*/
-/*second slideshow trial*/
+/*slideshow functionality*/
 /*-----------------------*/
 
 .slideshow-constants .wrapper {
@@ -318,7 +343,7 @@ header form {
     display: none;
 }
 
-/*positioning headlines and nav bullets realtive to the wrapper */
+/*positioning 3 headline bubbles and nav bullets relative to the wrapper */
 
 .slideshow-constants ul {
     position: absolute;
@@ -450,29 +475,8 @@ header form {
     display: none;
 }
 
-/*#st2:target ~ .slideshow {*/
-/*background-image: url("../resources/img/slider/digital-services.png");*/
-/*background-size: cover;*/
-/*background-position: 50% 0;*/
-/*background-attachment: fixed;*/
-/*}*/
-
-/*#st3:target ~ .slideshow {*/
-/*background-image: url("../resources/img/slider/evolve-to-ip4g.jpg");*/
-/*background-size: cover;*/
-/*background-position: 50% 0;*/
-/*background-attachment: fixed;*/
-/*}*/
-
-/*#st4:target ~ .slideshow {*/
-/*background-image: url("../resources/img/slider/smartly-monetize.jpg");*/
-/*background-size: cover;*/
-/*background-position: 50% 0;*/
-/*background-attachment: fixed;*/
-/*}*/
-
 /*------------------------------*/
-/*end of slideshow second trial*/
+/*end of slideshow functionality*/
 /*------------------------------*/
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -511,7 +515,7 @@ header form {
 }
 
 /*------------------------------*/
-/*slutions icons hover state*!*/
+/*solutions icons hover state*!*/
 /*------------------------------*/
 
 .solutions li:first-child div {
