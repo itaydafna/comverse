@@ -97,7 +97,7 @@ nav li {
     vertical-align: bottom;
 }
 
-nav li:nth-child(-n+3):after,
+nav>ul>li:nth-child(-n+3):after,
 .searchbox button:before,
 .login:before {
     content: "";
@@ -144,6 +144,13 @@ header form {
 .searchbox input:focus,
 .searchbox button:focus {
     outline: 0;
+}
+
+/*-------------------*/
+/*mega-menu styling*/
+/*-------------------*/
+.mega-menu {
+    display: none;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
