@@ -172,14 +172,6 @@ outline: 0;
     background: none;
 }
 
-/*.user-preferences select:before {*/
-    /*content: "";*/
-    /*background-image: url("../resources/img/icons/icon-arrow-down.png") no-repeat;*/
-    /*background-size: cover;*/
-    /*position: absolute;*/
-    /*height: 3em;*/
-    /*width:3em;*/
-/*}*/
 
 /*-------------------*/
 /*mega-menu styling*/
@@ -260,7 +252,7 @@ background: url("../resources/img/mega-menu/Megamenu_About_Comverse_by_the_numbe
 }
 
 
-/*mega-menu dropdown on hover*/
+/*mega-menu drop-down on hover*/
 
 nav>ul>li:hover >a {
     color: #39c;
@@ -289,14 +281,15 @@ display: block;
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .slideshow,
-.headlines-list ul {
+.headlines-list>li {
     height: 560px;
-    /*this next one is temporary*/
-    overflow: hidden;
 }
 
-.slide {
-    background-size: cover;
+
+/*styling the slide color  postioning and background*/
+
+.slides-list>li {
+    background-size: 200%;
     background-position: 50% 0;
     background-attachment: fixed;
     color: #FFF;
@@ -325,52 +318,73 @@ display: block;
     padding-bottom: 0.6em;
 }
 
+
+/*styling uls on "superman" and "bulb" slides*/
+
+.superman ul,
+.bulb ul {
+    font-size: 1.4rem;
+    list-style: circle;
+    padding-left: 1.3em;
+    padding-bottom: 2em;
+    line-height: 1.3em;
+}
+
+
+
 /*headlines bubbles styling*/
-
-.headline h2 {
-    font-size: 2.3rem;
-    font-weight: 200;
-}
-
-.headline span {
-    font-size: 1.5rem;
-}
-
-.slider-nav {
-    padding: 2em 0;
-}
-
-.slider-nav li {
-    display: inline-block;
-}
-
-.slider-nav div {
-    background: #E5E5E5;
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin: 0.2rem;
-    border-radius: 20%;
-}
-
-.headlines-list {
-    display: inline-block;
-    margin: 0;
-}
-
-.headlines-list li {
-    display: inline-block;
-    float: left;
-    width: 30%;
-    height: 18em;
-    border-radius: 3%;
-}
 
 .headline {
     display: inline-block;
     text-align: left;
-    padding: 0.7em 2em
+    padding: 0.7em 2em;
+    color: #fff;
 }
+
+.headline h2 {
+font-size: 2.3rem;
+font-weight: 200;
+}
+
+.headline span {
+font-size: 1.5rem;
+}
+
+.headline span i {
+    margin-right: 7px;
+    font-size: 1.8rem;
+}
+
+.slider-nav {
+padding: 2em 0;
+}
+
+.slider-nav li {
+display: inline-block;
+}
+
+.slider-nav div {
+background: #E5E5E5;
+display: inline-block;
+width: 1rem;
+height: 1rem;
+margin: 0.2rem;
+border-radius: 20%;
+}
+
+.headlines-list {
+display: inline-block;
+margin: 0;
+}
+
+.headlines-list li {
+display: inline-block;
+float: left;
+width: 30%;
+height: 18em;
+border-radius: 3%;
+}
+
 
 /*headlines bubbles hover state*/
 
@@ -445,7 +459,7 @@ display: block;
 
 /*making all slides apart from wheel "display: none" when not targeted*/
 
-.slide {
+.slides-list>li {
     display: none;
 }
 
@@ -464,13 +478,11 @@ display: block;
 }
 
 /*making target divs invisable*/
-.slides-list li {
+.slides-list>li {
     display: none;
 }
 
 /*slider bullet functionality and hover state*/
-
-
 /*making first bullet display blue on page load*/
 .slider-nav li:first-child div {
     background: #2E95CA;
@@ -544,40 +556,40 @@ display: block;
 
 
 /*making first slide display on page load*/
-.slides-list li:first-child {
+.slides-list>li:first-child {
     display: block;
 }
 
 /*targeting the "active" slide*/
-#st1:target ~ main .slides-list li:first-child {
+#st1:target ~ main .slides-list>li:first-child {
     display: block;
 }
-/*making all the rest of the slides "no targeted" when this one is*/
-#st1:target ~ main .slides-list li:not(:first-child) {
+/*making all the rest of the slides "not targeted" when this one is*/
+#st1:target ~ main .slides-list>li:not(:first-child) {
     display: none;
 }
 
-#st2:target ~ main .slides-list li:nth-child(2) {
+#st2:target ~ main .slides-list>li:nth-child(2) {
     display: block;
 }
 
-#st2:target ~ main .slides-list li:not(:nth-child(2)) {
+#st2:target ~ main .slides-list>li:not(:nth-child(2)) {
     display: none;
 }
 
-#st3:target ~ main .slides-list li:nth-child(3) {
+#st3:target ~ main .slides-list>li:nth-child(3) {
     display: block;
 }
 
-#st3:target ~ main .slides-list li:not(:nth-child(3)) {
+#st3:target ~ main .slides-list>li:not(:nth-child(3)) {
     display: none;
 }
 
-#st4:target ~ main .slides-list li:last-child {
+#st4:target ~ main .slides-list>li:last-child {
     display: block;
 }
 
-#st4:target ~ main .slides-list li:not(:last-child) {
+#st4:target ~ main .slides-list>li:not(:last-child) {
     display: none;
 }
 
