@@ -75,7 +75,7 @@ header {
 /*padding-bottom is given to componenets and not to header*/
 /*in order not to create a gap between nav and dropdown menu*/
 .comverse-logo,
-nav>ul>li,
+nav > ul > li,
 .user-preferences {
     padding-bottom: 1.2em;
 }
@@ -99,12 +99,12 @@ nav {
     float: right;
 }
 
-nav>ul>li {
+nav > ul > li {
     display: inline-block;
     vertical-align: bottom;
 }
 
-nav>ul>li:nth-child(-n+3):after,
+nav > ul > li:nth-child(-n+3):after,
 .searchbox button:before,
 .login:before {
     content: "";
@@ -123,44 +123,43 @@ nav>ul>li:nth-child(-n+3):after,
 /*search box styling*/
 
 header form {
-position: relative;
-border: 1px solid #DADADA;
-margin-top: 1.5em;
-height: 1.75em;
-border-radius: 10%;
-overflow: hidden;
--webkit-appearance: none;
-box-shadow: none;
-width: 12em;
+    position: relative;
+    border: 1px solid #DADADA;
+    margin-top: 1.5em;
+    height: 1.75em;
+    border-radius: 10%;
+    overflow: hidden;
+    -webkit-appearance: none;
+    box-shadow: none;
+    width: 12em;
 }
 
 .searchbox button,
 .searchbox input,
 .searchbox button:before {
-border:none;
-display: inline-block;
-vertical-align: center;
+    border: none;
+    display: inline-block;
+    vertical-align: center;
 }
 
 .searchbox input {
-width: 83%;
+    width: 83%;
 }
+
 .searchbox button {
-background: white;
-float: right;
-padding:0 3px 0 0;
+    background: white;
+    float: right;
+    padding: 0 3px 0 0;
 }
 
 .searchbox button:before {
-margin: 0 0.2em;
+    margin: 0 0.2em;
 }
-
 
 .searchbox input:focus,
 .searchbox button:focus {
-outline: 0;
+    outline: 0;
 }
-
 
 /*select language styling*/
 
@@ -172,7 +171,6 @@ outline: 0;
     background: none;
 }
 
-
 /*-------------------*/
 /*mega-menu styling*/
 /*-------------------*/
@@ -180,22 +178,23 @@ outline: 0;
 /*absolutely postioning dorpdown menu relative to header wrapper*/
 
 header .wrapper {
-position: relative;
-z-index: 100;
+    position: relative;
+    z-index: 100;
 }
+
 .mega-menu {
-display: none;
-position: absolute;
-background: #fff;
-right: 0;
-left:0;
-top: 100%;
+    display: none;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    left: 0;
+    top: 100%;
 }
 
 /*positioning and styling inside sub-menus*/
 
-.mega-menu>ul {
-display: inline-block;
+.mega-menu > ul {
+    display: inline-block;
     vertical-align: top;
     padding: 2em 4em 2em 2em;
     font-size: 1.27rem;
@@ -203,16 +202,17 @@ display: inline-block;
 }
 
 nav figure {
-    width:330px;
+    width: 330px;
     height: 215.6px;
     display: inline-block;
     background-size: cover;
-    float:right;
+    float: right;
+    position: relative;
 }
 
 /*highlighting first link in each UL on protfolio sub-menu */
 
-.protfolio ul>li>ul>li:first-child {
+.protfolio ul > li > ul > li:first-child {
     text-decoration: underline;
     color: blue;
 }
@@ -222,7 +222,7 @@ nav figure {
 nav figure:before {
     content: "";
     position: absolute;
-    left: 5px
+    right: 380px;
     display: inline-block;
     vertical-align: bottom;
     background: url('../resources/img/icons/line_divider_video.png') no-repeat;
@@ -230,65 +230,59 @@ nav figure:before {
     width: 1px;
 }
 
-
 /*setting the figures for each drop-down menu*/
 
-
-
 .needs figure {
-background: url("../resources/img/mega-menu/Megamenu_Your_Needs_eBook.jpg") no-repeat;
+    background: url("../resources/img/mega-menu/Megamenu_Your_Needs_eBook.jpg") no-repeat;
 }
 
 .protfolio figure {
-background: url("../resources/img/mega-menu/megamenu_digital_lifestyle.jpg") no-repeat;
+    background: url("../resources/img/mega-menu/megamenu_digital_lifestyle.jpg") no-repeat;
 }
 
 .news-media figure {
-background: url("../resources/img/mega-menu/Megamenu_News_and_media.jpg") no-repeat;
+    background: url("../resources/img/mega-menu/Megamenu_News_and_media.jpg") no-repeat;
 }
 
 .about figure {
-background: url("../resources/img/mega-menu/Megamenu_About_Comverse_by_the_numbers.jpg") no-repeat;
+    background: url("../resources/img/mega-menu/Megamenu_About_Comverse_by_the_numbers.jpg") no-repeat;
 }
-
 
 /*mega-menu drop-down on hover*/
 
-nav>ul>li:hover >a {
+nav > ul > li:hover > a {
     color: #39c;
 }
 
-nav>ul>li:first-child:hover .needs {
-display: block;
-margin: 0 auto;
+nav > ul > li:first-child:hover .needs {
+    display: block;
+    margin: 0 auto;
 }
 
-nav>ul>li:nth-child(2):hover .protfolio {
-display: block;
+nav > ul > li:nth-child(2):hover .protfolio {
+    display: block;
 }
 
-nav>ul>li:nth-child(3):hover .news-media {
-display: block;
+nav > ul > li:nth-child(3):hover .news-media {
+    display: block;
 }
 
-nav>ul>li:last-child:hover .about {
-display: block;
+nav > ul > li:last-child:hover .about {
+    display: block;
 }
-
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!*headlines slider styling*!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .slideshow,
-.headlines-list>li {
+.headlines-list > li {
     height: 560px;
 }
 
-
 /*styling the slide color  postioning and background*/
 
-.slides-list>li {
+.slides-list > li {
     background-size: 200%;
     background-position: 50% 0;
     background-attachment: fixed;
@@ -318,7 +312,6 @@ display: block;
     padding-bottom: 0.6em;
 }
 
-
 /*styling uls on "superman" and "bulb" slides*/
 
 .superman ul,
@@ -330,8 +323,6 @@ display: block;
     line-height: 1.3em;
 }
 
-
-
 /*headlines bubbles styling*/
 
 .headline {
@@ -342,12 +333,12 @@ display: block;
 }
 
 .headline h2 {
-font-size: 2.3rem;
-font-weight: 200;
+    font-size: 2.3rem;
+    font-weight: 200;
 }
 
 .headline span {
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .headline span i {
@@ -356,35 +347,34 @@ font-size: 1.5rem;
 }
 
 .slider-nav {
-padding: 2em 0;
+    padding: 2em 0;
 }
 
 .slider-nav li {
-display: inline-block;
+    display: inline-block;
 }
 
 .slider-nav div {
-background: #E5E5E5;
-display: inline-block;
-width: 1rem;
-height: 1rem;
-margin: 0.2rem;
-border-radius: 20%;
+    background: #E5E5E5;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.2rem;
+    border-radius: 20%;
 }
 
 .headlines-list {
-display: inline-block;
-margin: 0;
+    display: inline-block;
+    margin: 0;
 }
 
 .headlines-list li {
-display: inline-block;
-float: left;
-width: 30%;
-height: 18em;
-border-radius: 3%;
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: 18em;
+    border-radius: 3%;
 }
-
 
 /*headlines bubbles hover state*/
 
@@ -459,7 +449,7 @@ border-radius: 3%;
 
 /*making all slides apart from wheel "display: none" when not targeted*/
 
-.slides-list>li {
+.slides-list > li {
     display: none;
 }
 
@@ -478,7 +468,7 @@ border-radius: 3%;
 }
 
 /*making target divs invisable*/
-.slides-list>li {
+.slides-list > li {
     display: none;
 }
 
@@ -504,7 +494,6 @@ border-radius: 3%;
 #st1:target ~ main .slider-nav li:not(:nth-child(1)) div:hover {
     background: #2E95CA;
 }
-
 
 #st2:target ~ main .slider-nav li:nth-child(2) div {
     background: #2E95CA;
@@ -546,6 +535,7 @@ border-radius: 3%;
 .slider-nav {
     cursor: pointer;
 }
+
 .slider-nav div:hover {
     background: #2E95CA;
 }
@@ -554,42 +544,42 @@ border-radius: 3%;
 /*slides target functionality*/
 /*----------------------------*/
 
-
 /*making first slide display on page load*/
-.slides-list>li:first-child {
+.slides-list > li:first-child {
     display: block;
 }
 
 /*targeting the "active" slide*/
-#st1:target ~ main .slides-list>li:first-child {
+#st1:target ~ main .slides-list > li:first-child {
     display: block;
 }
+
 /*making all the rest of the slides "not targeted" when this one is*/
-#st1:target ~ main .slides-list>li:not(:first-child) {
+#st1:target ~ main .slides-list > li:not(:first-child) {
     display: none;
 }
 
-#st2:target ~ main .slides-list>li:nth-child(2) {
+#st2:target ~ main .slides-list > li:nth-child(2) {
     display: block;
 }
 
-#st2:target ~ main .slides-list>li:not(:nth-child(2)) {
+#st2:target ~ main .slides-list > li:not(:nth-child(2)) {
     display: none;
 }
 
-#st3:target ~ main .slides-list>li:nth-child(3) {
+#st3:target ~ main .slides-list > li:nth-child(3) {
     display: block;
 }
 
-#st3:target ~ main .slides-list>li:not(:nth-child(3)) {
+#st3:target ~ main .slides-list > li:not(:nth-child(3)) {
     display: none;
 }
 
-#st4:target ~ main .slides-list>li:last-child {
+#st4:target ~ main .slides-list > li:last-child {
     display: block;
 }
 
-#st4:target ~ main .slides-list>li:not(:last-child) {
+#st4:target ~ main .slides-list > li:not(:last-child) {
     display: none;
 }
 
