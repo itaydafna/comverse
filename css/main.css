@@ -113,11 +113,14 @@ nav>ul>li:nth-child(-n+3):after,
     background: url('../resources/img/icons/search_line_devider.png') no-repeat;
     height: 20px;
     width: 1px;
-    margin: 0 0.5em;
+    margin: 0 0.6em;
 }
 
-
+/*-------------------------*/
 /*search and login styling*/
+/*------------------------*/
+
+/*search box styling*/
 
 header form {
 position: relative;
@@ -158,6 +161,26 @@ margin: 0 0.2em;
 outline: 0;
 }
 
+
+/*select language styling*/
+
+.user-preferences select {
+    /*-moz-appearance: none; !* Firefox *!*/
+    /*-webkit-appearance: none; !* Safari and Chrome *!*/
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/*.user-preferences select:before {*/
+    /*content: "";*/
+    /*background-image: url("../resources/img/icons/icon-arrow-down.png") no-repeat;*/
+    /*background-size: cover;*/
+    /*position: absolute;*/
+    /*height: 3em;*/
+    /*width:3em;*/
+/*}*/
+
 /*-------------------*/
 /*mega-menu styling*/
 /*-------------------*/
@@ -182,34 +205,37 @@ top: 100%;
 .mega-menu>ul {
 display: inline-block;
     vertical-align: top;
-    padding: 2em;
-    font-size: 1.25rem;
+    padding: 2em 4em 2em 2em;
+    font-size: 1.27rem;
+    line-height: 1.5em;
 }
 
 nav figure {
-    width:300px;
-    height:196px;
+    width:330px;
+    height: 215.6px;
     display: inline-block;
+    background-size: cover;
     float:right;
 }
 
 /*highlighting first link in each UL on protfolio sub-menu */
 
-.protfolio li:first-child {
+.protfolio ul>li>ul>li:first-child {
     text-decoration: underline;
-    color: #blue;
+    color: blue;
 }
 
 /*line divider :before menu figures*/
 
-.mega-menu figure:before {
-    content"";
+nav figure:before {
+    content: "";
+    position: absolute;
+    left: 5px
+    display: inline-block;
+    vertical-align: bottom;
+    background: url('../resources/img/icons/line_divider_video.png') no-repeat;
     height: 185px;
     width: 1px;
-    background: url(../resources/img/icons/line_divider_video.png) no-repeat;
-    margin-right: 5px;
-    display: inline-block;
-
 }
 
 
@@ -222,15 +248,15 @@ background: url("../resources/img/mega-menu/Megamenu_Your_Needs_eBook.jpg") no-r
 }
 
 .protfolio figure {
-background: url("../resources/img/mega-menu/megamenu_digital_lifestyle.jpg");
+background: url("../resources/img/mega-menu/megamenu_digital_lifestyle.jpg") no-repeat;
 }
 
 .news-media figure {
-background: url("../resources/img/mega-menu/Megamenu_News_and_media.jpg");
+background: url("../resources/img/mega-menu/Megamenu_News_and_media.jpg") no-repeat;
 }
 
 .about figure {
-background: url("../resources/img/mega-menu/Megamenu_About_Comverse_by_the_numbers.jpg");
+background: url("../resources/img/mega-menu/Megamenu_About_Comverse_by_the_numbers.jpg") no-repeat;
 }
 
 
