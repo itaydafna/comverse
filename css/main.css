@@ -70,7 +70,14 @@ a {
 
 header {
     padding-top: 1.5em;
-    padding-bottom: 1.5em;
+}
+
+/*padding-bottom is given to componenets and not to header*/
+/*in order not to create a gap between nav and dropdown menu*/
+.comverse-logo,
+nav>ul>li,
+.user-preferences {
+    padding-bottom: 1.2em;
 }
 
 .comverse-logo {
@@ -109,41 +116,46 @@ nav>ul>li:nth-child(-n+3):after,
     margin: 0 0.5em;
 }
 
+
 /*search and login styling*/
 
 header form {
-    position: relative;
+position: relative;
+border: 1px solid #DADADA;
+margin-top: 1.5em;
+height: 1.75em;
+border-radius: 10%;
+overflow: hidden;
+-webkit-appearance: none;
+box-shadow: none;
+width: 12em;
 }
 
 .searchbox button,
-.searchbox input {
-    -webkit-appearance: none;
-    box-shadow: none;
-    margin-top: 1.5em;
-    height: 1.75em;
-    border: 1px solid #DADADA;
-    border-radius: 10%;
-    overflow: hidden;
+.searchbox input,
+.searchbox button:before {
+border:none;
+display: inline-block;
+vertical-align: center;
 }
 
+.searchbox input {
+width: 83%;
+}
 .searchbox button {
-    background: white;
-    border: none;
-    position: absolute;
-    z-index: 500;
-    top: 0;
-    left: 75%;
-    vertical-align: center;
+background: white;
+float: right;
+padding:0 3px 0 0;
 }
 
 .searchbox button:before {
-    margin: 0 0.2em;
-    vertical-align: center;
+margin: 0 0.2em;
 }
+
 
 .searchbox input:focus,
 .searchbox button:focus {
-    outline: 0;
+outline: 0;
 }
 
 /*-------------------*/
@@ -153,30 +165,98 @@ header form {
 /*absolutely postioning dorpdown menu relative to header wrapper*/
 
 header .wrapper {
-    position: relative;
+position: relative;
+z-index: 100;
 }
 .mega-menu {
-    display: none;
-    position: absolute;
-    background: #fff;
+display: none;
+position: absolute;
+background: #fff;
+right: 0;
+left:0;
+top: 100%;
 }
+
+/*positioning and styling inside sub-menus*/
+
+.mega-menu>ul {
+display: inline-block;
+    vertical-align: top;
+    padding: 2em;
+    font-size: 1.25rem;
+}
+
+nav figure {
+    width:300px;
+    height:196px;
+    display: inline-block;
+    float:right;
+}
+
+/*highlighting first link in each UL on protfolio sub-menu */
+
+.protfolio li:first-child {
+    text-decoration: underline;
+    color: #blue;
+}
+
+/*line divider :before menu figures*/
+
+.mega-menu figure:before {
+    content"";
+    height: 185px;
+    width: 1px;
+    background: url(../resources/img/icons/line_divider_video.png) no-repeat;
+    margin-right: 5px;
+    display: inline-block;
+
+}
+
+
+/*setting the figures for each drop-down menu*/
+
+
+
+.needs figure {
+background: url("../resources/img/mega-menu/Megamenu_Your_Needs_eBook.jpg") no-repeat;
+}
+
+.protfolio figure {
+background: url("../resources/img/mega-menu/megamenu_digital_lifestyle.jpg");
+}
+
+.news-media figure {
+background: url("../resources/img/mega-menu/Megamenu_News_and_media.jpg");
+}
+
+.about figure {
+background: url("../resources/img/mega-menu/Megamenu_About_Comverse_by_the_numbers.jpg");
+}
+
+
 /*mega-menu dropdown on hover*/
+
+nav>ul>li:hover >a {
+    color: #39c;
+}
+
 nav>ul>li:first-child:hover .needs {
-    display: block;
-    margin: 0 auto;
+display: block;
+margin: 0 auto;
 }
 
 nav>ul>li:nth-child(2):hover .protfolio {
-    display: block;
+display: block;
 }
 
 nav>ul>li:nth-child(3):hover .news-media {
-    display: block;
+display: block;
 }
 
 nav>ul>li:last-child:hover .about {
-    display: block;
+display: block;
 }
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!*headlines slider styling*!*/
