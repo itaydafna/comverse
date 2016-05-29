@@ -850,17 +850,24 @@ blockquote::after {
     vertical-align: top;
 }
 
+/*setting 2 first story blocks width*/
+
 .stories-list > li:nth-child(-n+2) {
-    width: 340px;
+    width: 332px;
 }
 
+/*setting last story block's width*/
+
 .stories-list > li:last-child {
-    width: 240px;
+    width: 225px;
 }
 
 .stories-list {
     padding-bottom: 4em;
 }
+
+/*setting side padding to middle story block*/
+
 
 /*setting the aside "addtional-partners" positioning and margin*/
 .stories-list > li:first-child aside,
@@ -872,6 +879,16 @@ blockquote::after {
     padding-bottom: 0.85em;
 }
 
+/*setting side padding for middle box on first and second story blocks*/
+.stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
+    padding: 0 0.1em;
+}
+
+/*setting padding between 2 aside boxes on last story block*/
+
+.stories-list > li:last-child .additional-partners li:first-child {
+    padding-right:0.3em;
+}
 
 /*reseting default margins for styling and postioning*/
 
@@ -922,7 +939,40 @@ blockquote::after {
 .reference img {
     position: absolute;
     top: 3px;
-    left: 70%;
+    left: 68%;
+}
+
+/*setting z index for h5 in last story block .reference so it */
+/*will not be hidden by img*/
+
+
+.stories-list>li:last-child .reference h4 {
+    position: relative;
+    z-index: 100;
+
+}
+
+/*---------------------------------*/
+/*hover state for success stories*/
+/*--------------------------------*/
+
+/*setting back "play" image*/
+
+.brand {
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+
+/*setting hover stae for brand images*/
+
+.brand:hover .back {
+    display: block;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
