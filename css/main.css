@@ -804,12 +804,9 @@ nav > ul > li:last-child:hover .about {
     color: black;
 }
 
-
-
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*success-stories section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
 
 .success-stories {
     background: #ECECEC;
@@ -822,7 +819,7 @@ nav > ul > li:last-child:hover .about {
     font-weight: 100;
     margin: 0;
     padding-top: 1.4em;
-padding-bottom: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 .success-story {
@@ -832,32 +829,72 @@ padding-bottom: 0.4em;
     line-height: 2.5rem;
 }
 
+/*adding qoute signs*/
+
+blockquote::before,
+blockquote::after {
+    content: "";
+    display: inline-block;
+    background: url("../resources/img/icons/quote-grey.png") no-repeat;
+    height: 20px;
+    width: 27px;
+}
+
+/*----------------------*/
 /*positioning the boxes*/
-
-.stories-list>li,
+/*----------------------*/
+.stories-list > li,
 .additional-partners li {
-display: inline-block;
-text-align: center;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
 }
 
-.stories-list li:nth-child(-n+2) {
-width: 35%;
+.stories-list > li:nth-child(-n+2) {
+    width: 340px;
 }
 
-.stories-list li:last-child {
-width: 20%;
+.stories-list > li:last-child {
+    width: 240px;
 }
 
+.stories-list {
+    padding-bottom: 4em;
+}
 
+blockquote,
+h5 {
+    margin: 0;
+}
+/*--------------------------------------*/
+/*positioning inside success story box */
+/*-------------------------------------*/
+
+/*top (".quote") part*/
 
 .success-story {
     text-align: left;
 }
 
-.success-story img {
+.quote img {
     float: left;
 }
 
+/*bottom (".reference" part*/
+
+.reference {
+    position: relative;
+}
+
+.reference h4 {
+    color: #50B2E2;
+}
+
+.reference img {
+    position: absolute;
+    top: 3px;
+    left: 70%;
+}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Footer styling*/
