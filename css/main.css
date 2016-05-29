@@ -862,15 +862,34 @@ blockquote::after {
     padding-bottom: 4em;
 }
 
-blockquote,
-h5 {
+/*setting the aside "addtional-partners" positioning and margin*/
+.stories-list > li:first-child aside,
+.stories-list > li:last-child aside {
+    padding-top: 1em;
+}
+
+.stories-list > li:nth-child(2) aside {
+    padding-bottom: 0.85em;
+}
+
+
+/*reseting default margins for styling and postioning*/
+
+.success-stories blockquote,
+.success-stories h5,
+.success-stories h4 {
     margin: 0;
 }
+
 /*--------------------------------------*/
 /*positioning inside success story box */
 /*-------------------------------------*/
 
 /*top (".quote") part*/
+
+.quote {
+    height: 115px;
+}
 
 .success-story {
     text-align: left;
@@ -878,6 +897,11 @@ h5 {
 
 .quote img {
     float: left;
+    padding: 7px;
+}
+
+.quote blockquote {
+    padding: 5px;
 }
 
 /*bottom (".reference" part*/
@@ -888,6 +912,11 @@ h5 {
 
 .reference h4 {
     color: #50B2E2;
+}
+
+.reference h4,
+.reference h5 {
+    padding-left: 10px;
 }
 
 .reference img {
