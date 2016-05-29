@@ -804,9 +804,12 @@ nav > ul > li:last-child:hover .about {
     color: black;
 }
 
+
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*success-stories section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 .success-stories {
     background: #ECECEC;
@@ -819,32 +822,42 @@ nav > ul > li:last-child:hover .about {
     font-weight: 100;
     margin: 0;
     padding-top: 1.4em;
-    padding-bottom: 0.4em;
+padding-bottom: 0.4em;
 }
 
-.stories-list li {
-    display: inline-block;
-    float: left;
+.success-story {
+    background: #fff;
+    color: #616161;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+/*positioning the boxes*/
+
+.stories-list>li,
+.additional-partners li {
+display: inline-block;
+text-align: center;
 }
 
 .stories-list li:nth-child(-n+2) {
-    width: 35%;
+width: 35%;
 }
 
 .stories-list li:last-child {
-    width: 20%;
+width: 20%;
 }
 
-.success-quote {
-    background: #fff;
-    color: #616161;
+
+
+.success-story {
+    text-align: left;
 }
 
-.brand:hover {
-    background: url(../resources/img/success-stories/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg);
-    position: relative;
-    z-index: 10;
+.success-story img {
+    float: left;
 }
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Footer styling*/
