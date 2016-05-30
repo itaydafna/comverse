@@ -35,34 +35,35 @@ a {
     clear: both;
 }
 
-/*-----------------------*/
-/*general button styling*/
-/*----------------------*/
-
-.gen-button {
-    background: #3096CA;
-    color: #FFF;
-    border: none;
-    border-radius: 6%;
-    position: relative;
-}
-
-/* button "play" icon - can be absolutely positioned based on the button*/
-.gen-button:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    vertical-align: bottom;
-    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
-    height: 13px;
-    width: 10px;
-}
-
 /*aligning all the content to the center of the page*/
 .wrapper {
     width: 960px;
     margin: 0 auto;
 }
+
+/*-----------------------*/
+/*general button styling*/
+/*----------------------*/
+
+.gen-button {
+background: #3096CA;
+color: #FFF;
+border: none;
+border-radius: 6%;
+position: relative;
+}
+
+/* button "play" icon - can be absolutely positioned based on the button*/
+.gen-button:after {
+content: "";
+position: absolute;
+display: inline-block;
+vertical-align: bottom;
+background: url('../resources/img/icons/search_line_devider.png') no-repeat;
+height: 13px;
+width: 10px;
+}
+
 
 /*!!!!!!!!!!!!!!!!!*/
 /*!*header styling*!*/
@@ -332,6 +333,7 @@ nav > ul > li:last-child:hover .about {
     color: #fff;
 }
 
+
 .headline h2 {
     font-size: 2.3rem;
     font-weight: 200;
@@ -374,6 +376,12 @@ nav > ul > li:last-child:hover .about {
     width: 30%;
     height: 18em;
     border-radius: 3%;
+}
+
+/*makes entier .headline buble clickable*/
+.headlines-list li a {
+    display: block;
+    height: 100%
 }
 
 /*headlines bubbles hover state*/
@@ -829,10 +837,10 @@ nav > ul > li:last-child:hover .about {
     line-height: 2.5rem;
 }
 
-/*adding qoute signs*/
+/*adding quote signs for front quote card*/
 
-blockquote::before,
-blockquote::after {
+.quote>blockquote::before,
+.quote>blockquote::after {
     content: "";
     display: inline-block;
     background: url("../resources/img/icons/quote-grey.png") no-repeat;
@@ -910,6 +918,7 @@ blockquote::after {
 
 .success-story {
     text-align: left;
+    position: relative;
 }
 
 .quote img {
@@ -962,6 +971,38 @@ blockquote::after {
     position: relative;
 }
 
+/*styling back quote card*/
+.success-story .back {
+    background: #32A5DC;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.back blockquote {
+    text-align: left;
+    padding: 1em 3em;
+}
+/*adding quote signs for front quote card*/
+
+.back>blockquote::before,
+.back>blockquote::after {
+    content: "";
+    position: absolute;
+    background: url("../resources/img/icons/quote-blue.png") no-repeat;
+    height: 20px;
+    width: 31px;
+}
+
+.back>blockquote::before {
+    left: 3%;
+}
+
+.back>blockquote::after {
+    right: 10%;
+}
+
+
 .back {
     position: absolute;
     top:0;
@@ -969,9 +1010,9 @@ blockquote::after {
     display: none;
 }
 
-/*setting hover stae for brand images*/
+/*setting hover state for brand images and quote cards*/
 
-.brand:hover .back {
+.card:hover .back {
     display: block;
 }
 
