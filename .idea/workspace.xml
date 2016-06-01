@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/css/main.css" description=".events .date span:first-child {&#10;    font-size: 4...." line="783" />
+    <bookmark url="file://$PROJECT_DIR$/css/main.css" description=".events .date span:first-child {&#10;    font-size: 4...." line="789" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a696e4-3efc-4f74-b80a-22dbd9d0913f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
     </list>
     <ignored path="comverse.iws" />
@@ -31,8 +32,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3056">
-                  <caret line="630" column="96" selection-start-line="630" selection-start-column="96" selection-end-line="630" selection-end-column="96" />
+                <state relative-caret-position="491">
+                  <caret line="459" column="44" selection-start-line="459" selection-start-column="44" selection-end-line="459" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -55,8 +56,8 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="710" column="0" selection-start-line="710" selection-start-column="0" selection-end-line="710" selection-end-column="0" />
+                <state relative-caret-position="401">
+                  <caret line="425" column="17" selection-start-line="425" selection-start-column="17" selection-end-line="425" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -240,12 +241,12 @@
       <workItem from="1464289504329" duration="41027000" />
       <workItem from="1464540919811" duration="14191000" />
       <workItem from="1464637790619" duration="5552000" />
-      <workItem from="1464801201330" duration="13222000" />
+      <workItem from="1464801201330" duration="14869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159523000" />
+    <option name="totallyTimeSpent" value="161170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -416,18 +417,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="401">
+          <caret line="425" column="17" selection-start-line="425" selection-start-column="17" selection-end-line="425" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="710" column="0" selection-start-line="710" selection-start-column="0" selection-end-line="710" selection-end-column="0" />
+        <state relative-caret-position="491">
+          <caret line="459" column="44" selection-start-line="459" selection-start-column="44" selection-end-line="459" selection-end-column="44" />
           <folding />
         </state>
       </provider>

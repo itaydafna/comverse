@@ -51,6 +51,7 @@ a {
     border: none;
     border-radius: 6%;
     position: relative;
+    display: inline-block;
 }
 
 /* button "play" icon - can be absolutely positioned based on the button*/
@@ -272,8 +273,11 @@ nav > ul > li:last-child:hover .about {
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!*headlines slider styling*!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 .slideshow,
 .headlines-list > li,
@@ -409,11 +413,13 @@ nav > ul > li:last-child:hover .about {
     background: rgb(225, 116, 20);
 }
 
+/*gen button adjustments for healdines section*/
+
 .slideshow button {
     font-size: 1.3rem;
     font-weight: 100;
     text-transform: uppercase;
-    padding: 0.5em;
+    padding: 9px 90px 9px 9px;
     text-align: left;
 }
 
@@ -723,8 +729,8 @@ nav > ul > li:last-child:hover .about {
     font-size: 3.7rem;
     font-weight: 100;
     margin: 0;
-    padding-top: 1.4em;
-    padding-bottom: 0.4em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
 }
 
 .events-list {
@@ -749,7 +755,7 @@ nav > ul > li:last-child:hover .about {
     font-size: 2.5rem;
     font-weight: 100;
     text-align: left;
-    margin: 1em 0;
+    /*margin: 1em 0;*/
 }
 
 .news p {
