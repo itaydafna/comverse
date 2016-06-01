@@ -1029,7 +1029,7 @@ nav > ul > li:last-child:hover .about {
 footer {
     color: #E6E6E6;
     background: #2A2A29;
-    height: 325px;
+    height: 322px;
 }
 
 .site-sections,
@@ -1047,8 +1047,10 @@ footer {
 }
 
 .site-sections h4 {
-    font-size: 1.5rem;
-    font-weight: ;
+    font-size: 1.35rem;
+    margin: 0;
+    padding: 27px 0;
+    font-weight: 100;
 }
 
 footer aside {
