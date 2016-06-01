@@ -204,7 +204,7 @@ header .wrapper {
 
 nav figure {
     width: 330px;
-    height: 215.6px;
+    height: 215px;
     display: inline-block;
     background-size: cover;
     float: right;
@@ -277,20 +277,20 @@ nav > ul > li:last-child:hover .about {
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .slideshow,
-.headlines-list > li {
-    height: 560px;
+.headlines-list > li,
+.slides-list > li {
+    height: 549px;
 }
 
 /*styling the slide color  postioning and background*/
 
 .slides-list > li {
-    background-size: 200%;
+    background-size: cover;
     background-position: 50% 0;
     background-attachment: fixed;
     color: #FFF;
     font-weight: 100;
     padding-bottom: 2rem;
-    height: 560px;
 }
 
 .slide h1 {
@@ -602,6 +602,7 @@ nav > ul > li:last-child:hover .about {
 .solutions {
     color: #FFF;
     background: url("../resources/img/backgrounds/solutions-bg.png"), #48A6CB;
+    height: 420px;
 }
 
 .solutions h1 {
@@ -713,6 +714,7 @@ nav > ul > li:last-child:hover .about {
     background-position: 50% 0;
     background-attachment: fixed;
     color: #FFF;
+    height: 454px;
 }
 
 .events h1 {
@@ -819,6 +821,7 @@ nav > ul > li:last-child:hover .about {
 .success-stories {
     background: #ECECEC;
     color: #565656;
+    height: 573px;
 }
 
 .success-stories h1 {
@@ -977,6 +980,9 @@ nav > ul > li:last-child:hover .about {
     height: 100%;
     width: 100%;
     color: white;
+    /*setting z-index so the last quote back card will be on top of h5 which*/
+    /*also has z-index*/
+    z-index: 200;
 }
 
 .back blockquote {
@@ -1023,6 +1029,7 @@ nav > ul > li:last-child:hover .about {
 footer {
     color: #E6E6E6;
     background: #2A2A29;
+    height: 325px;
 }
 
 .site-sections,
@@ -1040,7 +1047,8 @@ footer {
 }
 
 .site-sections h4 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: ;
 }
 
 footer aside {
