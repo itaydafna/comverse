@@ -37,7 +37,7 @@ a {
 
 /*aligning all the content to the center of the page*/
 .wrapper {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -1030,6 +1030,11 @@ footer {
     color: #E6E6E6;
     background: #2A2A29;
     height: 322px;
+    position: relative;
+}
+
+footer .wrapper {
+    overflow: auto;
 }
 
 .site-sections,
@@ -1037,8 +1042,11 @@ footer {
     display: inline-block;
     float: left;
     padding: 0;
-    margin: 0;
+    margin: 0 15px 0 0;
     text-align: left;
+    font-size: 1.2rem ;
+    font-weight: 100;
+    line-height: 2.1rem;
 }
 
 .site-sections > ul {
@@ -1049,32 +1057,82 @@ footer {
 .site-sections h4 {
     font-size: 1.35rem;
     margin: 0;
-    padding: 27px 0;
+    padding: 27px 0 10px 0;
     font-weight: 100;
 }
+/*----------------------*/
+/*styling footer - aside*/
+/*----------------------*/
 
 footer aside {
+    padding: 27px;
+    position: relative;
     background: #3C3C3C;
     float: right;
-    height: 100%;
+    height: 322px;
+    width: 30%;
+    /*(why doesn't height: 100% work here?*/
 }
 
-.social-media li {
-    display: inline-block;
-    float: left;
-}
 
 footer aside h2 {
-    color: #4C9EC6;
+color: #4C9EC6;
+text-align: center;
+font-weight: 600;
+font-size: 1.7rem;
+margin:0;
+padding-bottom: 18px;
 }
 
-.policies {
-    color: #737373;
+
+footer .date {
+display: inline-block;
+line-height: 3.3rem;
+padding-right: 10px;
+float: left;
 }
 
-.policies {
+
+footer .date span {
+display: block;
+text-align: center;
+}
+
+footer .day {
+font-size: 4.4rem;
+}
+
+footer .month {
+font-size: 2.4rem;
+font-weight: 100;
+}
+
+footer hr {
     clear: left;
-    float: left;
+    margin: 30px 0;
+}
+
+footer p {
+font-size: 1.6rem;
+font-weight: 100;
+line-height: 2.15rem;
+margin: 0;
+}
+
+
+/*styling the subscribe footer form*/
+
+
+.social-media li {
+    position: absolute;
+    top: 90%;
+}
+
+.policies {
+position: absolute;
+top: 90%;
+color: #737373;
+font-size: 1.2rem;
 }
 
 .policies span:first-child:after {
@@ -1090,6 +1148,6 @@ footer aside h2 {
 /*positioning assistance*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-/*.user-preferences {*/
+/*footer * {*/
 /*border: 1px solid red;*/
 /*}*/
