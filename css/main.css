@@ -703,8 +703,11 @@ nav > ul > li:last-child:hover .about {
 /*end of solutions section styling*/
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Events section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 .events {
     background: url("../resources/img/backgrounds/news-and-events-bg.jpg") no-repeat;
@@ -812,9 +815,15 @@ nav > ul > li:last-child:hover .about {
     color: black;
 }
 
+
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/*success-stories section styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*success-stories  styling*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
 
 .success-stories {
     background: #ECECEC;
@@ -824,11 +833,11 @@ nav > ul > li:last-child:hover .about {
 
 .success-stories h1 {
     text-align: center;
-    font-size: 3.7rem;
+    font-size: 3.8rem;
     font-weight: 100;
     margin: 0;
-    padding-top: 1.4em;
-    padding-bottom: 0.4em;
+    padding-top: 1.8em;
+    padding-bottom: 1.32em;
 }
 
 .success-story {
@@ -836,6 +845,8 @@ nav > ul > li:last-child:hover .about {
     color: #616161;
     font-size: 1.6rem;
     line-height: 2.5rem;
+    height: 207px;
+    padding: 10px;
 }
 
 /*adding quote signs for front quote card*/
@@ -923,7 +934,7 @@ nav > ul > li:last-child:hover .about {
 
 .quote img {
     float: left;
-    padding: 7px;
+    padding-right: 7px;
 }
 
 .quote blockquote {
@@ -1018,9 +1029,21 @@ nav > ul > li:last-child:hover .about {
     display: block;
 }
 
+
+
+/*success stories button postioning*/
+
+.success-stories button {
+    display: block;
+    margin: 0 auto;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*Footer styling*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 footer {
     color: #E6E6E6;
