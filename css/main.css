@@ -46,24 +46,23 @@ a {
 /*----------------------*/
 
 .gen-button {
-background: #3096CA;
-color: #FFF;
-border: none;
-border-radius: 6%;
-position: relative;
+    background: #3096CA;
+    color: #FFF;
+    border: none;
+    border-radius: 6%;
+    position: relative;
 }
 
 /* button "play" icon - can be absolutely positioned based on the button*/
 .gen-button:after {
-content: "";
-position: absolute;
-display: inline-block;
-vertical-align: bottom;
-background: url('../resources/img/icons/search_line_devider.png') no-repeat;
-height: 13px;
-width: 10px;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: bottom;
+    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
+    height: 13px;
+    width: 10px;
 }
-
 
 /*!!!!!!!!!!!!!!!!!*/
 /*!*header styling*!*/
@@ -332,7 +331,6 @@ nav > ul > li:last-child:hover .about {
     padding: 0.7em 2em;
     color: #fff;
 }
-
 
 .headline h2 {
     font-size: 2.3rem;
@@ -842,8 +840,8 @@ nav > ul > li:last-child:hover .about {
 
 /*adding quote signs for front quote card*/
 
-.quote>blockquote::before,
-.quote>blockquote::after {
+.quote > blockquote::before,
+.quote > blockquote::after {
     content: "";
     display: inline-block;
     background: url("../resources/img/icons/quote-grey.png") no-repeat;
@@ -879,7 +877,6 @@ nav > ul > li:last-child:hover .about {
 
 /*setting side padding to middle story block*/
 
-
 /*setting the aside "addtional-partners" positioning and margin*/
 .stories-list > li:first-child aside,
 .stories-list > li:last-child aside {
@@ -898,7 +895,7 @@ nav > ul > li:last-child:hover .about {
 /*setting padding between 2 aside boxes on last story block*/
 
 .stories-list > li:last-child .additional-partners li:first-child {
-    padding-right:0.3em;
+    padding-right: 0.3em;
 }
 
 /*reseting default margins for styling and postioning*/
@@ -957,8 +954,7 @@ nav > ul > li:last-child:hover .about {
 /*setting z index for h5 in last story block .reference so it */
 /*will not be hidden by img*/
 
-
-.stories-list>li:last-child .reference h4 {
+.stories-list > li:last-child .reference h4 {
     position: relative;
     z-index: 100;
 
@@ -989,10 +985,11 @@ nav > ul > li:last-child:hover .about {
     text-align: left;
     padding: 1em 3em;
 }
+
 /*adding quote signs for front quote card*/
 
-.back>blockquote::before,
-.back>blockquote::after {
+.back > blockquote::before,
+.back > blockquote::after {
     content: "";
     position: absolute;
     background: url("../resources/img/icons/quote-blue.png") no-repeat;
@@ -1000,19 +997,18 @@ nav > ul > li:last-child:hover .about {
     width: 31px;
 }
 
-.back>blockquote::before {
+.back > blockquote::before {
     left: 3%;
 }
 
-.back>blockquote::after {
+.back > blockquote::after {
     right: 10%;
 }
 
-
 .back {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     display: none;
 }
 
@@ -1044,7 +1040,7 @@ footer .wrapper {
     padding: 0;
     margin: 0 15px 0 0;
     text-align: left;
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
     font-weight: 100;
     line-height: 2.1rem;
 }
@@ -1060,6 +1056,7 @@ footer .wrapper {
     padding: 27px 0 10px 0;
     font-weight: 100;
 }
+
 /*----------------------*/
 /*styling footer - aside*/
 /*----------------------*/
@@ -1074,65 +1071,120 @@ footer aside {
     /*(why doesn't height: 100% work here?*/
 }
 
-
 footer aside h2 {
-color: #4C9EC6;
-text-align: center;
-font-weight: 600;
-font-size: 1.7rem;
-margin:0;
-padding-bottom: 18px;
+    color: #4C9EC6;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 0;
+    padding-bottom: 18px;
 }
-
 
 footer .date {
-display: inline-block;
-line-height: 3.3rem;
-padding-right: 10px;
-float: left;
+    display: inline-block;
+    line-height: 3.3rem;
+    padding-right: 10px;
+    float: left;
 }
 
-
 footer .date span {
-display: block;
-text-align: center;
+    display: block;
+    text-align: center;
 }
 
 footer .day {
-font-size: 4.4rem;
+    font-size: 4.4rem;
 }
 
 footer .month {
-font-size: 2.4rem;
-font-weight: 100;
+    font-size: 2.4rem;
+    font-weight: 100;
 }
 
 footer hr {
     clear: left;
-    margin: 30px 0;
+    margin: 28px 0;
 }
 
 footer p {
-font-size: 1.6rem;
-font-weight: 100;
-line-height: 2.15rem;
-margin: 0;
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 2.15rem;
+    margin: 0;
 }
-
 
 /*styling the subscribe footer form*/
 
+footer form {
+    width: 100%;
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+}
 
-.social-media li {
+footer form input {
+    width: 70%;
+    float: left;
+    height: 28px;
+}
+
+footer form button {
+    width: 30%;
+    float: left;
+    position: relative;
+    right: 3px;
+}
+
+/*styling the placeholder on the input (will work only on Chrom*/
+
+::-webkit-input-placeholder
+/*:-moz-placeholder,*/
+/*::-moz-placeholder,*/
+/*:-ms-input-placeholder*/
+{
+    color: black;
+    font-size: 1.3rem;
+    padding-left: 6px;
+    font-weight: 500;
+}
+
+
+/*positioning social media links on footer aside*/
+
+.social-media {
     position: absolute;
     top: 90%;
 }
 
+.social-media li {
+    float: left;
+    position: relative;
+}
+
+.social-media li:nth-child(2) {
+    margin: 0 9px;
+}
+
+/*setting social media hover state*/
+
+.blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.social-media li:hover .blue {
+    display: block;
+
+}
+
+/*styling copyright and policy section on footer*/
+
 .policies {
-position: absolute;
-top: 90%;
-color: #737373;
-font-size: 1.2rem;
+    position: absolute;
+    top: 90%;
+    color: #737373;
+    font-size: 1.2rem;
 }
 
 .policies span:first-child:after {
@@ -1142,6 +1194,9 @@ font-size: 1.2rem;
     height: 20px;
     width: 1px;
     margin: 0 1em;
+    position: relative;
+    top: 4px;
+
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
