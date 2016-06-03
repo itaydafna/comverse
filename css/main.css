@@ -38,59 +38,87 @@ a {
 /*aligning all the content to the center of the page*/
 .wrapper {
     max-width: 960px;
+    min-width: 913px;
     margin: 0 auto;
 }
+
+
 
 /*-----------------------*/
 /*general button styling*/
 /*----------------------*/
+/*full styling for firs gen button (slides section)*/
+/*small adjustments for other buttons will be made per section */
 
 .gen-button {
+    display: inline-block;
+    font-size: 1.35rem;
     background: #3096CA;
     color: #FFF;
     border: none;
-    border-radius: 6%;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 9px;
+    width: 190px;
+    height: 35px;
+    text-align: left;
+    border-radius: 8%;
     position: relative;
-    display: inline-block;
+    box-shadow: 0 1px 3px rgba(97, 97, 97,0.75);
 }
 
-/* button "play" icon - can be absolutely positioned based on the button*/
-.gen-button:after {
+.gen-button::after {
     content: "";
-    position: absolute;
     display: inline-block;
-    vertical-align: bottom;
-    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
-    height: 13px;
+    float: right;
+    background: url("../resources/img/icons/btnArrow.png") no-repeat;
     width: 10px;
+    height: 13px;
+    position: absolute;
+    left: 88%;
 }
 
 /*!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!*/
 /*!*header styling*!*/
+/*!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!*/
 
 header {
     padding-top: 1.5em;
+    height: 75px;
 }
 
-/*padding-bottom is given to componenets and not to header*/
-/*in order not to create a gap between nav and dropdown menu*/
-.comverse-logo,
-nav > ul > li,
-.user-preferences {
-    padding-bottom: 1.2em;
+header .wrapper {
+    height: 75px;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+/*big bottom-padding to demonstate that paddings do not "spill"*/
+
+nav > ul > li
+{
+    /*padding-bottom: 1.5em;*/
+    padding-bottom: 6em;
 }
 
 .comverse-logo {
-    display: inline-block;
-    vertical-align: bottom;
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
+    float: left;
 }
 
 nav {
     display: inline-block;
     font-size: 1.25rem;
-    vertical-align: bottom;
+    /*vertical-align: bottom;*/
     margin: 0 5em 0 2em;
+    /*top: 5px;*/
+    float: left;
+    padding-top: 40px;
 }
 
 .user-preferences {
@@ -162,7 +190,7 @@ header form {
     outline: 0;
 }
 
-/*select language styling*/
+/*select language and login styling*/
 
 .user-preferences select {
     /*-moz-appearance: none; !* Firefox *!*/
@@ -172,16 +200,17 @@ header form {
     background: none;
 }
 
+.login:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
 /*-------------------*/
 /*mega-menu styling*/
 /*-------------------*/
 
 /*absolutely postioning dorpdown menu relative to header wrapper*/
-
-header .wrapper {
-    position: relative;
-    z-index: 100;
-}
 
 .mega-menu {
     display: none;
@@ -189,7 +218,7 @@ header .wrapper {
     background: #fff;
     right: 0;
     left: 0;
-    top: 100%;
+    top: 105%;
 }
 
 /*positioning and styling inside sub-menus*/
@@ -251,8 +280,9 @@ nav figure:before {
 
 /*mega-menu drop-down on hover*/
 
-nav > ul > li:hover > a {
+nav > ul > li:hover {
     color: #39c;
+    background: #fff;
 }
 
 nav > ul > li:first-child:hover .needs {
@@ -283,6 +313,10 @@ nav > ul > li:last-child:hover .about {
 .headlines-list > li,
 .slides-list > li {
     height: 549px;
+}
+
+.slideshow {
+    clear: left;
 }
 
 /*styling the slide color  postioning and background*/
@@ -413,24 +447,6 @@ nav > ul > li:last-child:hover .about {
     background: rgb(225, 116, 20);
 }
 
-/*gen button adjustments for healdines section*/
-
-.slideshow button {
-    font-size: 1.3rem;
-    font-weight: 100;
-    text-transform: uppercase;
-    padding: 9px 90px 9px 9px;
-    text-align: left;
-}
-
-.slideshow button::after {
-    content: "";
-    display: inline-block;
-    float: right;
-    background: url("../resources/img/icons/btnArrow.png") no-repeat;
-    width: 5em;
-    margin-left: 2rem;
-}
 
 /*-----------------------*/
 /*slideshow functionality*/
@@ -600,7 +616,9 @@ nav > ul > li:last-child:hover .about {
 /*------------------------------*/
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*solutions section styling*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .solutions {
@@ -609,101 +627,107 @@ nav > ul > li:last-child:hover .about {
     height: 420px;
 }
 
+/*heading's padding sets the spacing between what comes before and after*/
+
 .solutions h1 {
     text-align: center;
-    font-size: 3.7rem;
+    font-size: 3.80rem;
     font-weight: 100;
     margin: 0;
-    padding-top: 1.4em;
-    padding-bottom: 0.4em;
+    padding-top: 1.51em;
+    padding-bottom: 1.82em;
+}
+
+.solutions h3 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.4rem;
+    vertical-align: top;
+    line-height: 2rem;
+
 }
 
 .solutions ul {
-
     display: inline-block;
     text-align: center;
     cursor: pointer;
+    padding-bottom: 2.1em;
 }
 
 .solutions li {
-    /*float: left;*/
-    display: inline-block;
-    width: 14%;
-    text-align: center;
-    font-weight: 100;
-    font-size: 1.2rem;
-    vertical-align: top;
+display: inline-block;
+width: 14%;
+vertical-align: top;
 }
+
+/*-------------------------------------*/
+/*solutions section button adjustments*/
+/*-------------------------------------*/
+
+.solutions button {
+    width: 220px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
 
 /*------------------------------*/
 /*solutions icons hover state*!*/
 /*------------------------------*/
 
 .solutions li:first-child div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_biz-analitics.png") no-repeat;
+height: 63px;
+background: url("../resources/img/solutions/solution_icon_biz-analitics.png") no-repeat;
 }
 
 .solutions li:first-child:hover div {
-    background: url("../resources/img/solutions/solution_icon_biz-analitics_hover.png") no-repeat;
+background: url("../resources/img/solutions/solution_icon_biz-analitics_hover.png") no-repeat;
 }
 
 .solutions li:nth-child(2) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_diti-cx.png") no-repeat;
+height: 63px;
+background: url("../resources/img/solutions/solution_icon_diti-cx.png") no-repeat;
 }
 
 .solutions li:nth-child(2):hover div {
-    background: url("../resources/img/solutions/solution_icon_diti-cx_hover.png") no-repeat;
+background: url("../resources/img/solutions/solution_icon_diti-cx_hover.png") no-repeat;
 }
 
 .solutions li:nth-child(3) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_smart-money.png") no-repeat;
+height: 63px;
+background: url("../resources/img/solutions/solution_icon_smart-money.png") no-repeat;
 }
 
 .solutions li:nth-child(3):hover div {
-    background: url("../resources/img/solutions/solution_icon_smart-money_hover.png") no-repeat;
+background: url("../resources/img/solutions/solution_icon_smart-money_hover.png") no-repeat;
 }
 
 .solutions li:nth-child(4) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_optimize-efficnt.png") no-repeat;
+height: 63px;
+background: url("../resources/img/solutions/solution_icon_optimize-efficnt.png") no-repeat;
 }
 
 .solutions li:nth-child(4):hover div {
-    background: url("../resources/img/solutions/solution_icon_optimize-efficnt_hover.png") no-repeat;
+background: url("../resources/img/solutions/solution_icon_optimize-efficnt_hover.png") no-repeat;
 }
 
 .solutions li:nth-child(5) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_personal.png") no-repeat;
+height: 63px;
+background: url("../resources/img/solutions/solution_icon_personal.png") no-repeat;
 }
 
 .solutions li:nth-child(5):hover div {
-    background: url("../resources/img/solutions/solution_icon_personal_hover.png") no-repeat;
+background: url("../resources/img/solutions/solution_icon_personal_hover.png") no-repeat;
 }
 
 .solutions li:last-child div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_biz-transform.png") no-repeat;
+height: 63px;
+background: url("../resources/img/solutions/solution_icon_biz-transform.png") no-repeat;
 }
 
 .solutions li:last-child:hover div {
-    background: url("../resources/img/solutions/solution_icon_biz-transform_hover.png") no-repeat;
-}
-
-/*-----------------------*/
-/*solutions section button*/
-/*--------------------------*/
-
-.solutions button {
-    width: 15em;
-    display: block;
-    margin: 1em auto 2em;
-    text-align: center;
-    font-size: 1.3rem;
-
+background: url("../resources/img/solutions/solution_icon_biz-transform_hover.png") no-repeat;
 }
 
 /*end of solutions section styling*/
@@ -726,11 +750,11 @@ nav > ul > li:last-child:hover .about {
 
 .events h1 {
     text-align: center;
-    font-size: 3.7rem;
+    font-size: 3.75rem;
     font-weight: 100;
     margin: 0;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
+    padding-top: 1.4em;
+    padding-bottom: 1.8em;
 }
 
 .events-list {
@@ -752,19 +776,22 @@ nav > ul > li:last-child:hover .about {
 }
 
 .events-list h3 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     font-weight: 100;
     text-align: left;
-    /*margin: 1em 0;*/
+    margin: 0;
+    padding-bottom: 0.45em;
 }
 
 .news p {
     font-size: 1.5rem;
     color: black;
+    line-height: 1.95rem;
 }
 
-.news div {
+.event-box {
     background: hsla(27, 13%, 85%, 0.7);
+    height: 12em;
 }
 
 .news div:not(.date):hover {
@@ -777,9 +804,18 @@ nav > ul > li:last-child:hover .about {
     display: inline-block;
     float: left;
     width: 24%;
-    height: 100%;
+    height: 82%;
     color: #FFF;
     margin: 1em 1em;
+    box-shadow: grey -2px 2px 2px;
+}
+
+.events .day {
+    padding-bottom: 10px;
+}
+
+.events .month {
+    padding-top: 10px;
 }
 
 .events .date span {
@@ -799,15 +835,19 @@ nav > ul > li:last-child:hover .about {
 }
 
 .news i {
-    margin-right: 0.7rem;
+    padding-left: 0.2em;
+    padding-right: 0.4em;
+    padding-top: 0.5em;
+    font-size: 2.1rem;
+
 }
 
-.news > a > span,
-.news i {
-    font-size: 1.3rem;
+.news > a > span {
+    font-size: 1.4rem;
     font-weight: 100;
-    margin-top: 0.5rem;
 }
+
+
 
 .all-news:hover {
     color: black;
@@ -846,24 +886,25 @@ nav > ul > li:last-child:hover .about {
     padding-bottom: 1.32em;
 }
 
+
 .success-story {
-    background: #fff;
-    color: #616161;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
-    height: 207px;
-    padding: 10px;
+background: #fff;
+color: #616161;
+font-size: 1.6rem;
+line-height: 2.5rem;
+height: 207px;
+padding: 10px;
 }
 
 /*adding quote signs for front quote card*/
 
 .quote > blockquote::before,
 .quote > blockquote::after {
-    content: "";
-    display: inline-block;
-    background: url("../resources/img/icons/quote-grey.png") no-repeat;
-    height: 20px;
-    width: 27px;
+content: "";
+display: inline-block;
+background: url("../resources/img/icons/quote-grey.png") no-repeat;
+height: 20px;
+width: 27px;
 }
 
 /*----------------------*/
@@ -871,48 +912,52 @@ nav > ul > li:last-child:hover .about {
 /*----------------------*/
 .stories-list > li,
 .additional-partners li {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
+display: inline-block;
+text-align: center;
+vertical-align: top;
 }
 
 /*setting 2 first story blocks width*/
 
 .stories-list > li:nth-child(-n+2) {
-    width: 332px;
+width: 332px;
 }
 
 /*setting last story block's width*/
 
 .stories-list > li:last-child {
-    width: 225px;
+width: 225px;
 }
 
 .stories-list {
-    padding-bottom: 4em;
+padding-bottom: 4em;
 }
 
 /*setting side padding to middle story block*/
 
+.stories-list > li:nth-child(2){
+    margin:0 1%;
+}
+
 /*setting the aside "addtional-partners" positioning and margin*/
 .stories-list > li:first-child aside,
 .stories-list > li:last-child aside {
-    padding-top: 1em;
+padding-top: 1em;
 }
 
 .stories-list > li:nth-child(2) aside {
-    padding-bottom: 0.85em;
+padding-bottom: 0.85em;
 }
 
 /*setting side padding for middle box on first and second story blocks*/
 .stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
-    padding: 0 0.1em;
+padding: 0 0.1em;
 }
 
 /*setting padding between 2 aside boxes on last story block*/
 
 .stories-list > li:last-child .additional-partners li:first-child {
-    padding-right: 0.3em;
+padding-right: 0.3em;
 }
 
 /*reseting default margins for styling and postioning*/
@@ -920,7 +965,7 @@ nav > ul > li:last-child:hover .about {
 .success-stories blockquote,
 .success-stories h5,
 .success-stories h4 {
-    margin: 0;
+margin: 0;
 }
 
 /*--------------------------------------*/
@@ -930,50 +975,49 @@ nav > ul > li:last-child:hover .about {
 /*top (".quote") part*/
 
 .quote {
-    height: 115px;
+height: 115px;
 }
 
 .success-story {
-    text-align: left;
-    position: relative;
+text-align: left;
 }
 
 .quote img {
-    float: left;
-    padding-right: 7px;
+float: left;
+padding-right: 7px;
 }
 
 .quote blockquote {
-    padding: 5px;
+padding: 5px;
 }
 
 /*bottom (".reference" part*/
 
 .reference {
-    position: relative;
+position: relative;
 }
 
 .reference h4 {
-    color: #50B2E2;
+color: #50B2E2;
 }
 
 .reference h4,
 .reference h5 {
-    padding-left: 10px;
+padding-left: 10px;
 }
 
 .reference img {
-    position: absolute;
-    top: 3px;
-    left: 68%;
+position: absolute;
+top: 3px;
+left: 68%;
 }
 
 /*setting z index for h5 in last story block .reference so it */
 /*will not be hidden by img*/
 
 .stories-list > li:last-child .reference h4 {
-    position: relative;
-    z-index: 100;
+position: relative;
+z-index: 100;
 
 }
 
@@ -981,14 +1025,23 @@ nav > ul > li:last-child:hover .about {
 /*hover state for success stories*/
 /*--------------------------------*/
 
+/*the container of .front and .back quote cards*/
+.card {
+    height: 207px;
+    position: relative;
+    overflow: hidden;
+}
+
 /*setting back "play" image*/
 
 .brand {
-    position: relative;
+height: 95px;
+position: relative;
+overflow: hidden;
 }
 
 /*styling back quote card*/
-.success-story .back {
+.card .back {
     background: #32A5DC;
     height: 100%;
     width: 100%;
@@ -1023,25 +1076,32 @@ nav > ul > li:last-child:hover .about {
 }
 
 .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
+    display: block;
 }
 
 /*setting hover state for brand images and quote cards*/
 
-.card:hover .back {
+
+
+
+.card:hover .back,
+.brand:hover .back {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+.back {
+    transition: all 2000ms;
+}
 
-
-/*success stories button postioning*/
+/*success stories button adjustments*/
 
 .success-stories button {
     display: block;
     margin: 0 auto;
+    font-size: 1.15rem;
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -1074,9 +1134,17 @@ footer .wrapper {
     line-height: 2.1rem;
 }
 
+.site-sections a:hover {
+    text-decoration: underline;
+}
+
 .site-sections > ul {
     display: inline-block;
-    width: 30%;
+    width: 70%;
+}
+
+.site-sections>li:nth-child(2) {
+    margin: 0 60px;
 }
 
 .site-sections h4 {
@@ -1084,6 +1152,10 @@ footer .wrapper {
     margin: 0;
     padding: 27px 0 10px 0;
     font-weight: 100;
+}
+
+.site-sections ul {
+    cursor: pointer;
 }
 
 /*----------------------*/
@@ -1156,11 +1228,24 @@ footer form input {
     height: 28px;
 }
 
-footer form button {
+/*footer form button adjustmen*/
+
+.subscribe button {
     width: 30%;
+    height: 28px;
     float: left;
     position: relative;
     right: 3px;
+    background: #3096CA;
+    color: #FFF;
+    border: none;
+    font-size: 1.3rem;
+    padding: 2px;
+    text-align: center;
+}
+
+.subscribe button:after {
+    display: none;
 }
 
 /*styling the placeholder on the input (will work only on Chrom*/
