@@ -915,7 +915,7 @@ nav > ul > li:last-child:hover .about {
     padding-bottom: 4em;
 }
 
-/*setting side padding to middle story block*/
+/*setting side margin to middle story block*/
 
 .stories-list > li:nth-child(2) {
     margin: 0 1.9%;
@@ -981,6 +981,7 @@ nav > ul > li:last-child:hover .about {
 
 .reference h4 {
     color: #50B2E2;
+    font-weight: 100;
 }
 
 .reference h4,
@@ -999,7 +1000,6 @@ nav > ul > li:last-child:hover .about {
 .stories-list li:last-child .reference img {
     top: 20px;
 }
-
 
 /*solve issue where multi-links logo is hiding h4*/
 /*by giving h4 a z index*/
@@ -1293,6 +1293,46 @@ footer form input {
     margin: 0 1em;
     position: relative;
     top: 4px;
+}
+
+/*==============*/
+/*==============*/
+/*responsive*/
+/*==============*/
+/*==============*/
+
+@media (max-width: 960px) and (min-width: 768px) {
+
+    /*-------------success stories----------------*/
+    /*setting 2 first story blocks width*/
+    .stories-list > li:nth-child(-n+2) {
+        width: 34%;
+    }
+
+    /*setting side margin to middle story block*/
+    .stories-list > li {
+        float: left;
+    }
+
+    .stories-list > li:nth-child(2) {
+        margin: 0;
+    }
+
+    /*getting rid of barnd boxs margins*/
+    .additional-partners li {
+        float: left;
+    }
+
+    /*setting side padding for middle box on first and second story blocks*/
+    .stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
+        padding: 0;
+    }
+
+    /*setting padding between 2 aside boxes on last story block*/
+    .stories-list > li:last-child .additional-partners li:first-child {
+        padding-right: 0;
+    }
+    
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
