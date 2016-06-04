@@ -39,6 +39,7 @@ a {
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
+
 }
 
 /*-----------------------*/
@@ -81,6 +82,15 @@ a {
 /*!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!*/
 
+/*#####-hiding mobile components-####*/
+.mobile-nav,
+.mobile-logo,
+.mobile-search {
+    display: none;
+}
+
+/*##################################*/
+
 header {
     padding-top: 1.5em;
     height: 75px;
@@ -92,11 +102,11 @@ header .wrapper {
     z-index: 100;
 }
 
-/*big bottom-padding to demonstate that paddings do not "spill"*/
-
 nav > ul > li {
-    /*padding-bottom: 1.5em;*/
-    padding-bottom: 6em;
+    padding-bottom: 1.5em;
+
+    /*big bottom-padding to demonstate that paddings do not "spill"*/
+    /*padding-bottom: 6em;*/
 }
 
 .comverse-logo {
@@ -311,7 +321,7 @@ nav > ul > li:last-child:hover .about {
     clear: left;
 }
 
-/*styling the slide color  postioning and background*/
+/*styling the slide color  positioning and background*/
 
 .slides-list > li {
     background-size: cover;
@@ -1301,6 +1311,10 @@ footer form input {
 /*==============*/
 /*==============*/
 
+/*==============*/
+/*medium screen*/
+/*==============*/
+
 @media (max-width: 960px) and (min-width: 768px) {
 
     /*-------------success stories----------------*/
@@ -1332,8 +1346,77 @@ footer form input {
     .stories-list > li:last-child .additional-partners li:first-child {
         padding-right: 0;
     }
-    
+
 }
+
+/*==============*/
+/*small device*/
+/*==============*/
+
+@media (max-width: 767px) and (min-width: 320px) {
+
+    /*-------------------------*/
+    /*---------general---------*/
+    /*-------------------------*/
+    .wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    /*-------------------------*/
+    /*---------header----------*/
+    /*-------------------------*/
+    header {
+        padding-top: 0;
+        text-align: center;
+        height: 62px;
+    }
+
+    nav,
+    .user-preferences,
+    .full-size-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .comverse-logo {
+        display: inline-block;
+        float: none;
+        /*vertical-align: top;*/
+        margin: 0 17.2%;
+    }
+
+    .mobile-nav,
+    .mobile-search {
+        display: inline-block;
+        float: none;
+        padding: 10px;
+        border: none;
+        border-radius: 15%;
+        background: #E6E6E6;
+        box-shadow: #616161 1px 1px 2px;
+        outline: none;
+        height: 40px;
+        vertical-align: bottom;
+        position: relative;
+        bottom: 12px;
+    }
+
+      /*------------------------------------*/
+     /*--------headlines (slider)----------*/
+    /*------------------------------------*/
+    .slideshow,
+    .headlines-list > li,
+    .slides-list > li {
+        height: 360px;
+    }
+
+/*end of @meida rule*/
+}
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*positioning assistance*/
