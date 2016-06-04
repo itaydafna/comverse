@@ -332,6 +332,10 @@ nav > ul > li:last-child:hover .about {
     padding-bottom: 2rem;
 }
 
+.slide-text-wrapper {
+    width: 45%;
+}
+
 .slide h1 {
     font-size: 3.6rem;
     font-weight: 100;
@@ -1369,7 +1373,7 @@ footer form input {
     header {
         padding-top: 0;
         text-align: center;
-        height: 62px;
+        height: 60px;
     }
 
     nav,
@@ -1402,16 +1406,34 @@ footer form input {
         height: 40px;
         vertical-align: bottom;
         position: relative;
-        bottom: 12px;
+        bottom: 13px
     }
 
       /*------------------------------------*/
      /*--------headlines (slider)----------*/
     /*------------------------------------*/
+
+    /*mobile slide styling*/
+
     .slideshow,
     .headlines-list > li,
     .slides-list > li {
         height: 360px;
+    }
+
+    .slide h1 {
+        font-size: 2.4rem;
+        padding-top: 0.6em;
+        padding-bottom: 0.4em;
+        line-height: 3rem;
+    }
+
+    .slide h3 {
+        font-size: 1.55rem;
+        font-weight: 100;
+        line-height: 1.5em;
+        margin: 0;
+        padding-bottom: 0.6em;
     }
 
 /*end of @meida rule*/
