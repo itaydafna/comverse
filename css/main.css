@@ -38,6 +38,7 @@ a {
 /*aligning all the content to the center of the page*/
 .wrapper {
     max-width: 960px;
+    min-width: 320px;
     margin: 0 auto;
 
 }
@@ -493,11 +494,11 @@ nav > ul > li:last-child:hover .about {
 }
 
 .slider-nav {
-    top: 24em;
+    bottom: 24.8em;
 }
 
 .headlines-list {
-    top: 35em;
+    bottom: 1.5em;
 }
 
 /*making target divs invisable*/
@@ -1357,22 +1358,24 @@ footer form input {
 /*small device*/
 /*==============*/
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px){
 
     /*-------------------------*/
     /*---------general---------*/
     /*-------------------------*/
     .wrapper {
-        max-width: 320px;
+        max-width: 100%;
         margin: 0 auto;
+
     }
+
 
     /*-------------------------*/
     /*---------header----------*/
     /*-------------------------*/
     header {
         padding-top: 0;
-        text-align: center;
+        text-align: left;
         height: 60px;
     }
 
@@ -1382,6 +1385,8 @@ footer form input {
         display: none;
     }
 
+
+
     .mobile-logo {
         display: block;
     }
@@ -1390,7 +1395,7 @@ footer form input {
         display: inline-block;
         float: none;
         /*vertical-align: top;*/
-        margin: 0 17.2%;
+        margin: 0 15%;
     }
 
     .mobile-nav,
@@ -1407,6 +1412,10 @@ footer form input {
         vertical-align: bottom;
         position: relative;
         bottom: 13px
+    }
+
+    .mobile-nav {
+        margin-left: 3%;
     }
 
       /*------------------------------------*/
@@ -1436,6 +1445,41 @@ footer form input {
         padding-bottom: 0.6em;
     }
 
+    .slide-text-wrapper {
+        width: 100%;
+        padding-left: 2%;
+        background: url("../resources/img/backgrounds/solutions-bg.png"), hsla(200, 61%, 49%,0.85);
+    }
+
+
+    .slide .gen-button {
+        margin-top: 11px;
+        margin-left: 2%;
+        font-size: 1.25rem;
+        padding: 9px;
+        width: 125px;
+        height: 28px;
+        text-align: left;
+        border-radius: 8%;
+        position: relative;
+        box-shadow: 0 1px 3px rgba(97, 97, 97, 0.75);
+    }
+
+
+    /*healines bubbles mobile state*/
+
+
+    .slideshow-constants ul,
+    .slideshow-constants,
+    .slideshow-constants .wrapper,
+    .slider-nav,
+    .headlines-list {
+        position: static;
+    }
+
+    .success-stories {
+        display:none;
+    }
 /*end of @meida rule*/
 }
 
