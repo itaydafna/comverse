@@ -948,13 +948,13 @@ nav > ul > li:last-child:hover .about {
 
 /*setting side padding for middle box on first and second story blocks*/
 .stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
-    padding: 0 2.3%;
+    padding: 0 2.25%;
 }
 
 /*setting padding between 2 aside boxes on last story block*/
 
 .stories-list > li:last-child .additional-partners li:first-child {
-    padding-right: 2.5%;
+    padding-right: 2.45%;
 }
 
 /*reseting default margins for styling and postioning*/
@@ -1489,7 +1489,90 @@ footer form input {
 
     .slideshow-constants .slider-nav {
         position: absolute;
-        bottom: 100%;
+        bottom: 98%;
+        left: 2%;
+    }
+
+    .slideshow-constants .slider-nav div{
+        height: 28px;
+        width: 28px;
+        border-radius: 6%;
+    }
+
+    .slideshow-constants .slider-nav div:after{
+        content: "1";
+        font-size: 1.6rem;
+        color: #5B5B5B;
+        display: block;
+        margin: 6px 8px;
+    }
+
+    /*slider nav hover state*/
+
+     .slider-nav div:hover:after {
+        color: white;
+    }
+
+      /*-------------------------------------*/
+     /*slider functionality for mobile state*/
+    /*-------------------------------------*/
+
+    /*making first bullet's :after white on page load*/
+    .slider-nav li:first-child div:after {
+        color: white;
+    }
+
+    /*targeting the "active" bullet*/
+    #st1:target ~ main .slider-nav li:nth-child(1) div:after {
+        color: white;
+    }
+
+    /*making all the rest of the bullets "not targeted" when this one is*/
+
+    #st1:target ~ main .slider-nav li:not(:nth-child(1)) div:after {
+        color: #5B5B5B;
+    }
+
+    /*hover effect for the "not targeted" bullets*/
+    /*noinspection ALL*/
+    #st1:target ~ main .slider-nav li:not(:nth-child(1)) div:hover:after {
+        color: white;
+    }
+
+    #st2:target ~ main .slider-nav li:nth-child(2) div:after {
+        color: white;
+    }
+
+    #st2:target ~ main .slider-nav li:not(:nth-child(2)) div:after {
+        color: #5B5B5B;
+    }
+
+    #st2:target ~ main .slider-nav li:not(:nth-child(2)) div:hover:after {
+        color: white;
+    }
+
+    #st3:target ~ main .slider-nav li:nth-child(3) div:after {
+        color: white;
+    }
+
+    #st3:target ~ main .slider-nav li:not(:nth-child(3)) div:after {
+        color: #5B5B5B;
+    }
+
+    #st3:target ~ main .slider-nav li:not(:nth-child(3)) div:hover:after {
+        color: white;
+    }
+
+    #st4:target ~ main .slider-nav li:nth-child(4) div:after {
+        color: white;
+    }
+
+    #st4:target ~ main .slider-nav li:not(:nth-child(4)) div:after {
+        color: #5B5B5B;
+    }
+
+    #st4:target ~ main .slider-nav li:not(:nth-child(4)) div:hover:after {
+        color: white;
     }
 
 /*end of @meida rule*/
