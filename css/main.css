@@ -325,7 +325,7 @@ nav > ul > li:last-child:hover .about {
 /*styling the slide color  positioning and background*/
 
 .slides-list > li {
-    background-size: cover;
+    background-size: 265%;
     background-position: 50% 0;
     background-attachment: fixed;
     color: #FFF;
@@ -1320,6 +1320,11 @@ footer form input {
 
 @media (max-width: 960px) and (min-width: 768px) {
 
+    /*slide background image on medium screen*/
+    .slides-list > li {
+        background-size: 350%;
+    }
+
     /*-------------success stories----------------*/
     /*setting 2 first story blocks width*/
     .stories-list > li:nth-child(-n+2) {
@@ -1416,6 +1421,14 @@ footer form input {
     /*------------------------------------*/
     /*--------headlines (slider)----------*/
     /*------------------------------------*/
+
+    /*setting up slide background image positioning and sizing*/
+
+    .slides-list > li {
+        background-size: cover;
+        background-attachment: inherit;
+    }
+
     /*mobile slide styling*/
     .slideshow {
         height: auto;
@@ -1659,6 +1672,8 @@ footer form input {
 
     .events {
         height: 600px;
+        background-size: cover;
+        background-attachment: inherit;
     }
 
     .events h1 {
