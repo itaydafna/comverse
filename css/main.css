@@ -38,7 +38,7 @@ a {
 /*aligning all the content to the center of the page*/
 .wrapper {
     max-width: 960px;
-    min-width: 320px;
+    min-width: 400px;
     margin: 0 auto;
 
 }
@@ -1625,6 +1625,33 @@ footer form input {
 
     #st4:target ~ main .slider-nav li:not(:nth-child(4)) div:hover:after {
         color: white;
+    }
+
+    /*-------------------------------------*/
+    /*slider functionality for mobile state*/
+    /*-------------------------------------*/
+
+    .solutions {
+        height: 297px;
+    }
+
+    .solutions .gen-button {
+        display: none;
+    }
+
+    .solutions h1 {
+        font-size: 2.1rem;
+        padding: 18px 0 15px 0;
+
+    }
+
+    .solutions h3 {
+        font-size: 1.3rem;
+        margin:0;
+    }
+
+    .solutions li {
+        width: 30%;
     }
 
 /*end of @meida rule*/
