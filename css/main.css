@@ -1534,9 +1534,26 @@ footer form input {
         border-radius: 6%;
     }
 
-    .slideshow-constants .slider-nav div:after{
+    /*adding numbers into nav bullets*/
+
+    .slideshow-constants .slider-nav li:first-child div:after {
         content: "1";
-        font-size: 1.6rem;
+    }
+
+    .slideshow-constants .slider-nav li:nth-child(2) div:after {
+        content: "2";
+    }
+
+    .slideshow-constants .slider-nav li:nth-child(3) div:after {
+        content: "3";
+    }
+
+    .slideshow-constants .slider-nav li:last-child div:after {
+        content: "4";
+    }
+
+    .slideshow-constants .slider-nav div:after{
+        font-size: 1.55rem;
         color: #5B5B5B;
         display: block;
         margin: 6px 8px;
