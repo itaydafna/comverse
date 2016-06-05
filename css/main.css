@@ -1508,6 +1508,21 @@ footer form input {
         background: rgb(225, 116, 20);
     }
 
+
+
+    .headline:after{
+        content: "";
+        background: url("../resources/img/icons/promotion-item-arrow.png") no-repeat;
+        height: 20px;
+        width: 10px;
+        display: block;
+        position: absolute;
+        right: 5%;
+        top:50%;
+
+    }
+
+
     /*-------------------*/
     /*slider nav styling*/
     /*-----------------*/
