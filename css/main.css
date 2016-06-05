@@ -1372,8 +1372,54 @@ footer form input {
 
     }
 
+    /*!*-------------------------*!*/
+    /*!*---------header V1----------*!*/
+    /*!*-------------------------*!*/
+    /*header {*/
+        /*padding-top: 0;*/
+        /*text-align: left;*/
+        /*height: 60px;*/
+    /*}*/
+
+    /*nav,*/
+    /*.user-preferences,*/
+    /*.full-size-logo {*/
+        /*display: none;*/
+    /*}*/
+
+    /*.mobile-logo {*/
+        /*display: block;*/
+    /*}*/
+
+    /*.comverse-logo {*/
+        /*display: inline-block;*/
+        /*float: none;*/
+        /*!*vertical-align: top;*!*/
+        /*margin: 0 15%;*/
+    /*}*/
+
+    /*.mobile-nav,*/
+    /*.mobile-search {*/
+        /*display: inline-block;*/
+        /*float: none;*/
+        /*padding: 10px;*/
+        /*border: none;*/
+        /*border-radius: 15%;*/
+        /*background: #E6E6E6;*/
+        /*box-shadow: #616161 1px 1px 2px;*/
+        /*outline: none;*/
+        /*height: 40px;*/
+        /*vertical-align: bottom;*/
+        /*position: relative;*/
+        /*bottom: 13px*/
+    /*}*/
+
+    /*.mobile-nav {*/
+        /*margin-left: 3%;*/
+    /*} */
+
     /*-------------------------*/
-    /*---------header----------*/
+    /*---------header V2----------*/
     /*-------------------------*/
     header {
         padding-top: 0;
@@ -1392,16 +1438,18 @@ footer form input {
     }
 
     .comverse-logo {
-        display: inline-block;
+        display: block;
+        width: 120px;
         float: none;
         /*vertical-align: top;*/
-        margin: 0 15%;
+        /*text-align: center;*/
+        margin: 0 auto;
     }
 
     .mobile-nav,
     .mobile-search {
         display: inline-block;
-        float: none;
+        /*float: none;*/
         padding: 10px;
         border: none;
         border-radius: 15%;
@@ -1409,13 +1457,17 @@ footer form input {
         box-shadow: #616161 1px 1px 2px;
         outline: none;
         height: 40px;
-        vertical-align: bottom;
-        position: relative;
-        bottom: 13px
+        /*vertical-align: bottom;*/
+        position: absolute;
+        top: 10px;
     }
 
     .mobile-nav {
-        margin-left: 3%;
+        left: 3%;
+    }
+
+    .mobile-search {
+        right: 3%;
     }
 
     /*------------------------------------*/
