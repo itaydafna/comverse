@@ -1427,7 +1427,7 @@ footer form input {
     .slideshow,
     .headlines-list > li,
     .slides-list > li {
-        height: 360px;
+        height: auto;
     }
 
     .slide h1 {
@@ -1468,18 +1468,23 @@ footer form input {
 
     /*healines bubbles mobile state*/
 
-
-    .slideshow-constants ul,
-    .slideshow-constants,
-    .slideshow-constants .wrapper,
-    .slider-nav,
-    .headlines-list {
+    .slideshow-constants ul
+    {
         position: static;
     }
 
-    .success-stories {
-        display:none;
+    .headlines-list li {
+        display: block;
+        width: 100%;
+        border-radius: 0;
     }
+
+    .headlines-list li:nth-child(2) {
+        margin: 0;
+    }
+
+
+
 /*end of @meida rule*/
 }
 
