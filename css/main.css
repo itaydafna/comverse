@@ -814,9 +814,6 @@ nav > ul > li:last-child:hover .about {
     box-shadow: grey -2px 2px 2px;
 }
 
-.events .day {
-    padding-bottom: 10px;
-}
 
 .events .month {
     padding-top: 10px;
@@ -827,13 +824,14 @@ nav > ul > li:last-child:hover .about {
     text-align: center;
 }
 
-.events .date span:first-child {
+.events .day {
     font-size: 4.5rem;
     border-bottom: 1px #fff dotted;
     text-align: center;
+    padding-bottom: 10px;
 }
 
-.events .date span:last-child {
+.events .month {
     font-size: 1.6rem;
     text-align: center;
 }
@@ -1358,7 +1356,7 @@ footer form input {
 /*small device*/
 /*==============*/
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
 
     /*-------------------------*/
     /*---------general---------*/
@@ -1368,7 +1366,6 @@ footer form input {
         margin: 0 auto;
 
     }
-
 
     /*-------------------------*/
     /*---------header----------*/
@@ -1384,8 +1381,6 @@ footer form input {
     .full-size-logo {
         display: none;
     }
-
-
 
     .mobile-logo {
         display: block;
@@ -1418,12 +1413,10 @@ footer form input {
         margin-left: 3%;
     }
 
-      /*------------------------------------*/
-     /*--------headlines (slider)----------*/
     /*------------------------------------*/
-
+    /*--------headlines (slider)----------*/
+    /*------------------------------------*/
     /*mobile slide styling*/
-
     .slideshow {
         height: auto;
     }
@@ -1450,9 +1443,8 @@ footer form input {
     .slide-text-wrapper {
         width: 100%;
         padding-left: 2%;
-        background: url("../resources/img/backgrounds/solutions-bg.png"), hsla(200, 61%, 49%,0.85);
+        background: url("../resources/img/backgrounds/solutions-bg.png"), hsla(200, 61%, 49%, 0.85);
     }
-
 
     .slide .gen-button {
         margin-top: 11px;
@@ -1466,11 +1458,11 @@ footer form input {
         position: relative;
         box-shadow: 0 1px 3px rgba(97, 97, 97, 0.75);
     }
+
     /*------------------------------*/
     /*healines bubbles mobile state*/
     /*-----------------------------*/
-    .slideshow-constants ul
-    {
+    .slideshow-constants ul {
         position: static;
     }
 
@@ -1507,7 +1499,6 @@ footer form input {
         background: rgb(250, 66, 158);
     }
 
-
     .headlines-list li:nth-child(2) {
         background: rgb(104, 192, 56);
         margin: 0;
@@ -1517,25 +1508,22 @@ footer form input {
         background: rgb(225, 116, 20);
     }
 
-
     /*-------------------*/
     /*slider nav styling*/
     /*-----------------*/
-
     .slideshow-constants .slider-nav {
         position: absolute;
         bottom: 98%;
         left: 2%;
     }
 
-    .slideshow-constants .slider-nav div{
+    .slideshow-constants .slider-nav div {
         height: 28px;
         width: 28px;
         border-radius: 6%;
     }
 
     /*adding numbers into nav bullets*/
-
     .slideshow-constants .slider-nav li:first-child div:after {
         content: "1";
     }
@@ -1552,7 +1540,7 @@ footer form input {
         content: "4";
     }
 
-    .slideshow-constants .slider-nav div:after{
+    .slideshow-constants .slider-nav div:after {
         font-size: 1.55rem;
         color: #5B5B5B;
         display: block;
@@ -1560,15 +1548,13 @@ footer form input {
     }
 
     /*slider nav hover state*/
-
-     .slider-nav div:hover:after {
+    .slider-nav div:hover:after {
         color: white;
     }
 
-      /*-------------------------------------*/
-     /*slider functionality for mobile state*/
     /*-------------------------------------*/
-
+    /*slider functionality for mobile state*/
+    /*-------------------------------------*/
     /*making first bullet's :after white on page load*/
     .slider-nav li:first-child div:after {
         color: white;
@@ -1580,7 +1566,6 @@ footer form input {
     }
 
     /*making all the rest of the bullets "not targeted" when this one is*/
-
     #st1:target ~ main .slider-nav li:not(:nth-child(1)) div:after {
         color: #5B5B5B;
     }
@@ -1628,9 +1613,8 @@ footer form input {
     }
 
     /*-------------------------------------*/
-    /*slider functionality for mobile state*/
+    /*solutions section mobile state*/
     /*-------------------------------------*/
-
     .solutions {
         height: 297px;
     }
@@ -1647,16 +1631,68 @@ footer form input {
 
     .solutions h3 {
         font-size: 1.3rem;
-        margin:0;
+        margin: 0;
     }
 
     .solutions li {
         width: 30%;
     }
 
-/*end of @meida rule*/
-}
+    /*-------------------------------------*/
+    /*events section mobile state*/
+    /*-------------------------------------*/
 
+    .events {
+        height: 600px;
+    }
+
+    .events h1 {
+        font-size: 2.1rem;
+        padding-top: 21px;
+        padding-bottom: 38px;
+
+    }
+
+    .events h3 {
+        font-size: 2.4rem;
+        padding-bottom: 2px;
+
+    }
+
+    .events-list {
+        margin-top:0;
+    }
+
+
+    .events-list li {
+        display: block;
+        width: 96%;
+        height: 175px;
+        margin: 0 auto;
+    }
+
+    .event-box {
+        height: 82px;
+        padding-right: 15%;
+    }
+
+    .events .date {
+        height: 75%;
+    }
+
+    .events .day {
+        font-size: 3rem;
+        padding-bottom: 3px;
+        font-weight: 100;
+    }
+
+    .events .month {
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 3px;
+        font-weight: 100;
+    }
+}
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*positioning assistance*/
