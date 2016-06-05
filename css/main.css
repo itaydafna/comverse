@@ -1424,10 +1424,12 @@ footer form input {
 
     /*mobile slide styling*/
 
-    .slideshow,
-    .headlines-list > li,
-    .slides-list > li {
+    .slideshow {
         height: auto;
+    }
+
+    .slides-list li {
+        height: 360px;
     }
 
     .slide h1 {
@@ -1483,7 +1485,12 @@ footer form input {
         margin: 0;
     }
 
+    /*slider nav styling*/
 
+    .slideshow-constants .slider-nav {
+        position: absolute;
+        bottom: 100%;
+    }
 
 /*end of @meida rule*/
 }
