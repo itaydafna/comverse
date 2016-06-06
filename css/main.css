@@ -1479,10 +1479,12 @@ footer form input {
 
 
 
-    /*mobile-searchbox toggle functionality*/
+    /*////////mobile-searchbox toggle functionality///////*/
+
+    /*styling mobile serchbox*/
 
     .mobile-searchbox {
-        display: block;
+        display: none;
         width: 97%;
         height: 27px;
         margin: 0 auto;
@@ -1494,10 +1496,18 @@ footer form input {
     .mobile-searchbox input{
         width: 100%;
         height: 100%;
+        font-size: 1.5rem;
     }
     .mobile-searchbox button {
         position: absolute;
         right: 2%;
+        top: 7%;
+    }
+
+    /*display on click on search icon */
+    #toggle-search:checked ~ .mobile-searchbox {
+        display: block;
+
     }
 
     /*------------------------------------*/
