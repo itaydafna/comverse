@@ -24,9 +24,10 @@
 <header>
   <div class="wrapper">
     <!--"hamburger" button for nav display on mobile devices-->
-    <button class="mobile-nav" href="#">
+    <input type="checkbox" class="hidden-checkbox" id="toggle-nav">
+    <lable for="toggle" class="mobile-nav">
       <img src="resources/img/icons/hamburger-icon.png" alt="mobile navigation button">
-    </button>
+    </lable>
     <a class="comverse-logo" href="index.html">
       <img class="full-size-logo" src="resources/img/logo/comverse-logo.png" alt="comverse's logo">
       <img class="mobile-logo" src="resources/img/logo/120px-Comverse_logo.gif" alt="comverse's logo">
@@ -143,9 +144,14 @@
       </ul>
     </nav>
     <!--search button for mobile state-->
-    <button class="mobile-search">
+    <input type="checkbox" class="hidden-checkbox" id="toggle-search">
+    <label class="mobile-search" for="toggle-search">
       <img src="resources/img/icons/searchBtnMobile.png" alt="mobile search button">
-    </button>
+    </label>
+    <form class="mobile-searchbox" action="#" method="GET">
+      <input type="search">
+      <button>X</button>
+    </form>
     <section class="user-preferences">
       <select name="select-lang">
         <option value="EN" selected>EN</option>

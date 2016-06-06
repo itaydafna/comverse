@@ -90,6 +90,11 @@ a {
     display: none;
 }
 
+/*hidden checkboxs for mobile header toggle functionality */
+.hidden-checkbox {
+    display:none;
+}
+
 /*##################################*/
 
 header {
@@ -1427,7 +1432,9 @@ footer form input {
         height: 60px;
     }
 
+    /*hiding full-size components*/
     nav,
+    .searchbox,
     .user-preferences,
     .full-size-logo {
         display: none;
@@ -1449,7 +1456,6 @@ footer form input {
     .mobile-nav,
     .mobile-search {
         display: inline-block;
-        /*float: none;*/
         padding: 10px;
         border: none;
         border-radius: 15%;
@@ -1463,11 +1469,35 @@ footer form input {
     }
 
     .mobile-nav {
+        position: absolute;
         left: 3%;
     }
 
     .mobile-search {
         right: 3%;
+    }
+
+
+
+    /*mobile-searchbox toggle functionality*/
+
+    .mobile-searchbox {
+        display: block;
+        width: 97%;
+        height: 27px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 10%;
+        top: -8px;
+    }
+
+    .mobile-searchbox input{
+        width: 100%;
+        height: 100%;
+    }
+    .mobile-searchbox button {
+        position: absolute;
+        right: 2%;
     }
 
     /*------------------------------------*/
