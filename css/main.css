@@ -1482,7 +1482,7 @@ footer form input {
 
     /*////////mobile-searchbox toggle functionality///////*/
 
-    /*styling mobile serchbox*/
+    /*styling mobile searchbox*/
 
     .mobile-searchbox {
         display: none;
@@ -1510,6 +1510,58 @@ footer form input {
         display: block;
 
     }
+
+    /*////////mobile-nav toggle functionality///////*/
+
+    /*styling mobile nav*/
+
+
+    nav {
+    margin: 0;
+    position: absolute;
+    padding-top: 0;
+    display: none;
+    width: 100%;
+    /*position: absolute;*/
+    background: white;
+}
+
+    nav>ul,
+    nav>ul>li{
+        display: block;
+        width: 100%;
+        /*position: absolute;*/
+        background: white;
+    }
+
+    /*getting rid of line breakers*/
+    nav > ul > li:nth-child(-n+3):after {
+        display: none;
+    }
+
+    /*getting rid of mega-menu dropdown*/
+
+    nav > ul > li:hover .mega-menu
+    {
+        display: none !important;
+    }
+
+    nav>ul>li {
+        border-bottom: 1px solid black;
+        padding-left: 6%;
+        padding-top: 3%;
+        /*need to work on creating bullets for nav items*/
+        /*background: url("../resources/img/icons/navCollapseArrowRight.png") no-repeat;*/
+        /*background-poition: 10% 10%;*/
+    }
+
+
+    /*display on click on nav icon */
+    #toggle-nav:checked ~ nav {
+        display: block;
+    }
+
+
 
     /*------------------------------------*/
     /*--------headlines (slider)----------*/
