@@ -86,7 +86,8 @@ a {
 /*#####-hiding mobile components-####*/
 .mobile-nav,
 .mobile-logo,
-.mobile-search {
+.mobile-search,
+.mobile-searchbox{
     display: none;
 }
 
@@ -1486,7 +1487,7 @@ footer form input {
     .mobile-searchbox {
         display: none;
         width: 97%;
-        height: 27px;
+        height: 30px;
         margin: 0 auto;
         position: relative;
         border-radius: 10%;
@@ -1526,7 +1527,7 @@ footer form input {
         height: auto;
     }
 
-    .slides-list li {
+    .slides-list>li {
         height: 360px;
     }
 
