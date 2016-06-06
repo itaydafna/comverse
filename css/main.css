@@ -38,7 +38,8 @@ a {
 /*aligning all the content to the center of the page*/
 .wrapper {
     max-width: 960px;
-    min-width: 400px;
+    min-width:320px;
+    /*min-width: 400px;*/
     margin: 0 auto;
 
 }
