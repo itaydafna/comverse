@@ -953,7 +953,7 @@ nav > ul > li:last-child:hover .about {
 
 /*setting side padding for middle box on first and second story blocks*/
 .stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
-    padding: 0 2.25%;
+    margin: 0 2.25%;
 }
 
 /*setting padding between 2 aside boxes on last story block*/
