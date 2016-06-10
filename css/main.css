@@ -38,7 +38,7 @@ a {
 /*aligning all the content to the center of the page*/
 .wrapper {
     max-width: 960px;
-    min-width:320px;
+    min-width: 320px;
     /*min-width: 400px;*/
     margin: 0 auto;
 
@@ -88,13 +88,13 @@ a {
 .mobile-nav,
 .mobile-logo,
 .mobile-search,
-.mobile-searchbox{
+.mobile-searchbox {
     display: none;
 }
 
 /*hidden checkboxs for mobile header toggle functionality */
 .hidden-checkbox {
-    display:none;
+    display: none;
 }
 
 /*##################################*/
@@ -673,6 +673,25 @@ nav > ul > li:last-child:hover .about {
     vertical-align: top;
 }
 
+.solutions li div {
+    position: relative;
+    height: 64px;
+}
+
+.solutions img {
+    width: 100%;
+    height: auto;
+}
+
+/*hiding hover state images*/
+
+.solutions img[src*="hover"] {
+    display: none;
+    position: absolute;
+    top: 0;
+
+}
+
 /*-------------------------------------*/
 /*solutions section button adjustments*/
 /*-------------------------------------*/
@@ -688,59 +707,81 @@ nav > ul > li:last-child:hover .about {
 /*solutions icons hover state*!*/
 /*------------------------------*/
 
-.solutions li:first-child div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_biz-analitics.png") no-repeat;
+.solutions li:first-child:hover img[src*="hover"] {
+    display: block;
 }
 
-.solutions li:first-child:hover div {
-    background: url("../resources/img/solutions/solution_icon_biz-analitics_hover.png") no-repeat;
+.solutions li:nth-child(2):hover img[src*="hover"] {
+    display: block;
 }
 
-.solutions li:nth-child(2) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_diti-cx.png") no-repeat;
+.solutions li:nth-child(3):hover img[src*="hover"] {
+    display: block;
 }
 
-.solutions li:nth-child(2):hover div {
-    background: url("../resources/img/solutions/solution_icon_diti-cx_hover.png") no-repeat;
+.solutions li:nth-child(4):hover img[src*="hover"] {
+    display: block;
 }
 
-.solutions li:nth-child(3) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_smart-money.png") no-repeat;
+.solutions li:nth-child(5):hover img[src*="hover"] {
+    display: block;
 }
 
-.solutions li:nth-child(3):hover div {
-    background: url("../resources/img/solutions/solution_icon_smart-money_hover.png") no-repeat;
+.solutions li:last-child:hover img[src*="hover"] {
+    display: block;
 }
 
-.solutions li:nth-child(4) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_optimize-efficnt.png") no-repeat;
-}
+/*.solutions li:first-child div {*/
+/*height: 63px;*/
+/*background: url("../resources/img/solutions/solution_icon_biz-analitics.png") no-repeat;*/
+/*}*/
 
-.solutions li:nth-child(4):hover div {
-    background: url("../resources/img/solutions/solution_icon_optimize-efficnt_hover.png") no-repeat;
-}
+/*background: url("../resources/img/solutions/solution_icon_biz-analitics_hover.png") no-repeat;*/
 
-.solutions li:nth-child(5) div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_personal.png") no-repeat;
-}
+/*.solutions li:nth-child(2) div {*/
+/*height: 63px;*/
+/*background: url("../resources/img/solutions/solution_icon_diti-cx.png") no-repeat;*/
+/*}*/
 
-.solutions li:nth-child(5):hover div {
-    background: url("../resources/img/solutions/solution_icon_personal_hover.png") no-repeat;
-}
+/*.solutions li:nth-child(2):hover div {*/
+/*background: url("../resources/img/solutions/solution_icon_diti-cx_hover.png") no-repeat;*/
+/*}*/
 
-.solutions li:last-child div {
-    height: 63px;
-    background: url("../resources/img/solutions/solution_icon_biz-transform.png") no-repeat;
-}
+/*.solutions li:nth-child(3) div {*/
+/*height: 63px;*/
+/*background: url("../resources/img/solutions/solution_icon_smart-money.png") no-repeat;*/
+/*}*/
 
-.solutions li:last-child:hover div {
-    background: url("../resources/img/solutions/solution_icon_biz-transform_hover.png") no-repeat;
-}
+/*.solutions li:nth-child(3):hover div {*/
+/*background: url("../resources/img/solutions/solution_icon_smart-money_hover.png") no-repeat;*/
+/*}*/
+
+/*.solutions li:nth-child(4) div {*/
+/*height: 63px;*/
+/*background: url("../resources/img/solutions/solution_icon_optimize-efficnt.png") no-repeat;*/
+/*}*/
+
+/*.solutions li:nth-child(4):hover div {*/
+/*background: url("../resources/img/solutions/solution_icon_optimize-efficnt_hover.png") no-repeat;*/
+/*}*/
+
+/*.solutions li:nth-child(5) div {*/
+/*height: 63px;*/
+/*background: url("../resources/img/solutions/solution_icon_personal.png") no-repeat;*/
+/*}*/
+
+/*.solutions li:nth-child(5):hover div {*/
+/*background: url("../resources/img/solutions/solution_icon_personal_hover.png") no-repeat;*/
+/*}*/
+
+/*.solutions li:last-child div {*/
+/*height: 63px;*/
+/*background: url("../resources/img/solutions/solution_icon_biz-transform.png") no-repeat;*/
+/*}*/
+
+/*.solutions li:last-child:hover div {*/
+/*background: url("../resources/img/solutions/solution_icon_biz-transform_hover.png") no-repeat;*/
+/*}*/
 
 /*end of solutions section styling*/
 
@@ -820,7 +861,6 @@ nav > ul > li:last-child:hover .about {
     margin: 1em 1em;
     box-shadow: grey -2px 2px 2px;
 }
-
 
 .events .month {
     padding-top: 10px;
@@ -1383,48 +1423,42 @@ footer form input {
     /*!*---------header V1----------*!*/
     /*!*-------------------------*!*/
     /*header {*/
-        /*padding-top: 0;*/
-        /*text-align: left;*/
-        /*height: 60px;*/
+    /*padding-top: 0;*/
+    /*text-align: left;*/
+    /*height: 60px;*/
     /*}*/
-
     /*nav,*/
     /*.user-preferences,*/
     /*.full-size-logo {*/
-        /*display: none;*/
+    /*display: none;*/
     /*}*/
-
     /*.mobile-logo {*/
-        /*display: block;*/
+    /*display: block;*/
     /*}*/
-
     /*.comverse-logo {*/
-        /*display: inline-block;*/
-        /*float: none;*/
-        /*!*vertical-align: top;*!*/
-        /*margin: 0 15%;*/
+    /*display: inline-block;*/
+    /*float: none;*/
+    /*!*vertical-align: top;*!*/
+    /*margin: 0 15%;*/
     /*}*/
-
     /*.mobile-nav,*/
     /*.mobile-search {*/
-        /*display: inline-block;*/
-        /*float: none;*/
-        /*padding: 10px;*/
-        /*border: none;*/
-        /*border-radius: 15%;*/
-        /*background: #E6E6E6;*/
-        /*box-shadow: #616161 1px 1px 2px;*/
-        /*outline: none;*/
-        /*height: 40px;*/
-        /*vertical-align: bottom;*/
-        /*position: relative;*/
-        /*bottom: 13px*/
+    /*display: inline-block;*/
+    /*float: none;*/
+    /*padding: 10px;*/
+    /*border: none;*/
+    /*border-radius: 15%;*/
+    /*background: #E6E6E6;*/
+    /*box-shadow: #616161 1px 1px 2px;*/
+    /*outline: none;*/
+    /*height: 40px;*/
+    /*vertical-align: bottom;*/
+    /*position: relative;*/
+    /*bottom: 13px*/
     /*}*/
-
     /*.mobile-nav {*/
-        /*margin-left: 3%;*/
+    /*margin-left: 3%;*/
     /*} */
-
     /*-------------------------*/
     /*---------header V2----------*/
     /*-------------------------*/
@@ -1479,12 +1513,8 @@ footer form input {
         right: 3%;
     }
 
-
-
     /*////////mobile-searchbox toggle functionality///////*/
-
     /*styling mobile searchbox*/
-
     .mobile-searchbox {
         display: none;
         width: 97%;
@@ -1495,11 +1525,12 @@ footer form input {
         top: -8px;
     }
 
-    .mobile-searchbox input{
+    .mobile-searchbox input {
         width: 100%;
         height: 100%;
         font-size: 1.5rem;
     }
+
     .mobile-searchbox button {
         position: absolute;
         right: 2%;
@@ -1513,22 +1544,19 @@ footer form input {
     }
 
     /*////////mobile-nav toggle functionality///////*/
-
     /*styling mobile nav*/
-
-
     nav {
-    margin: 0;
-    position: absolute;
-    padding-top: 0;
-    display: none;
-    width: 100%;
-    /*position: absolute;*/
-    background: white;
-}
+        margin: 0;
+        position: absolute;
+        padding-top: 0;
+        display: none;
+        width: 100%;
+        /*position: absolute;*/
+        background: white;
+    }
 
-    nav>ul,
-    nav>ul>li{
+    nav > ul,
+    nav > ul > li {
         display: block;
         width: 100%;
         /*position: absolute;*/
@@ -1541,13 +1569,11 @@ footer form input {
     }
 
     /*getting rid of mega-menu dropdown*/
-
-    nav > ul > li:hover .mega-menu
-    {
+    nav > ul > li:hover .mega-menu {
         display: none !important;
     }
 
-    nav>ul>li {
+    nav > ul > li {
         border-bottom: 1px solid black;
         padding-left: 6%;
         padding-top: 3%;
@@ -1556,20 +1582,15 @@ footer form input {
         /*background-poition: 10% 10%;*/
     }
 
-
     /*display on click on nav icon */
     #toggle-nav:checked ~ nav {
         display: block;
     }
 
-
-
     /*------------------------------------*/
     /*--------headlines (slider)----------*/
     /*------------------------------------*/
-
     /*setting up slide background image positioning and sizing*/
-
     .slides-list > li {
         background-size: cover;
         background-attachment: inherit;
@@ -1580,7 +1601,7 @@ footer form input {
         height: auto;
     }
 
-    .slides-list>li {
+    .slides-list > li {
         height: 360px;
     }
 
@@ -1667,9 +1688,7 @@ footer form input {
         background: rgb(225, 116, 20);
     }
 
-
-
-    .headline:after{
+    .headline:after {
         content: "";
         background: url("../resources/img/icons/promotion-item-arrow.png") no-repeat;
         height: 20px;
@@ -1677,10 +1696,9 @@ footer form input {
         display: block;
         position: absolute;
         right: 5%;
-        top:50%;
+        top: 50%;
 
     }
-
 
     /*-------------------*/
     /*slider nav styling*/
@@ -1815,7 +1833,6 @@ footer form input {
     /*-------------------------------------*/
     /*events section mobile state*/
     /*-------------------------------------*/
-
     .events {
         height: 600px;
         background-size: cover;
@@ -1836,9 +1853,8 @@ footer form input {
     }
 
     .events-list {
-        margin-top:0;
+        margin-top: 0;
     }
-
 
     .events-list li {
         display: block;
