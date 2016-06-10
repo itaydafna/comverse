@@ -676,6 +676,7 @@ nav > ul > li:last-child:hover .about {
 .solutions li div {
     position: relative;
     height: 64px;
+    width: 100%;
 }
 
 .solutions img {
@@ -1824,10 +1825,32 @@ footer form input {
     .solutions h3 {
         font-size: 1.3rem;
         margin: 0;
+        position: relative;
+        bottom: 10px;
     }
+
+    ul {width: 100% !important;}
 
     .solutions li {
         width: 30%;
+    }
+
+    /*trying to  create margin fluidity*/
+
+    .solutions li:nth-child(2),
+    .solutions li:nth-child(5){
+        margin: 0 2%;
+    }
+
+
+    .solutions div{
+        width:30%;
+        height: 20px;
+    }
+    .solutions img {
+        width: 100%;
+        height: auto;
+
     }
 
     /*-------------------------------------*/
