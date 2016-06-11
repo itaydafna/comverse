@@ -682,7 +682,10 @@ nav > ul > li:last-child:hover .about {
 .solutions img {
     width: 100%;
     position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     height: auto;
 }
 
@@ -983,7 +986,6 @@ nav > ul > li:last-child:hover .about {
     margin: 0 1.9%;
 }
 
-
 /*setting the aside "addtional-partners" positioning and margin*/
 .stories-list > li:first-child aside,
 .stories-list > li:last-child aside {
@@ -1006,16 +1008,13 @@ nav > ul > li:last-child:hover .about {
     margin-right: 0.77%;
 }
 
-
 /*creating img fludity*/
 
 .success-stories aside img,
-.success-stories aside a
-{
+.success-stories aside a {
     width: 100%;
     height: 100%;
 }
-
 
 /*fluid width for 1st and 2nd story block aside logo boxes*/
 
@@ -1024,14 +1023,12 @@ nav > ul > li:last-child:hover .about {
     height: auto;
 }
 
-
 /*fluid width for 3rd story block aside logo boxes*/
 
 .stories-list > li:last-child .additional-partners li {
     width: 49%;
     height: auto;
 }
-
 
 /*reseting default margins for styling and postioning*/
 
@@ -1115,7 +1112,6 @@ nav > ul > li:last-child:hover .about {
 /*setting back "play" image*/
 
 .brand {
-    height: atuo;
     position: relative;
     overflow: hidden;
 }
@@ -1842,6 +1838,7 @@ footer form input {
         height: 297px;
 
     }
+
     .solutions .wrapper {
         width: 100%;
         height: auto;
@@ -1869,22 +1866,21 @@ footer form input {
     }
 
     /*trying to  create margin fluidity*/
-
     .solutions li:nth-child(2),
-    .solutions li:nth-child(5){
+    .solutions li:nth-child(5) {
         margin: 0 3%;
     }
 
-
-    .solutions div{
-        width:30%;
+    .solutions div {
+        width: 30%;
         height: 20px;
         overflow: auto;
     }
+
     .solutions img {
         width: 112px;
-        height: auto;ֿ
-        margin: 0 0;
+        height: auto;
+        ֿ margin: 0 0;
 
     }
 
@@ -1951,14 +1947,12 @@ footer form input {
     /*-------------------------------------*/
     /*success stories mobile state*/
     /*-------------------------------------*/
-
-
     .success-stories {
         height: 695px;
     }
 
-    .stories-list>li:last-child {
-        display:none;
+    .stories-list > li:last-child {
+        display: none;
 
     }
 
@@ -1973,7 +1967,7 @@ footer form input {
         padding-bottom: 20px;
     }
 
-    .stories-list>li,
+    .stories-list > li,
     .success-story {
         display: block;
         width: 100% !important;
@@ -1990,42 +1984,40 @@ footer form input {
         font-size: 1.5rem;
         font-weight: 100;
         line-height: 2.2rem;
-        padding: 5%;
+        padding: 4%;
         height: 172px;
     }
 
+    .stories-list .additional-partners li,
     .success-story img {
-        width: 95px;
+        width: 93px !important;
         height: auto;
 
     }
 
-    .additional-partners img {
-        width: 95px !important;
-        height: auto;
-
+    /*setting side margin for middle logo box on first and second story blocks*/
+    .stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
+        margin: 0 2.25%;
 
     }
+
 
     .quote {
         height: 90px;
     }
 
     .success-story h4,
-    .success-story h5
-    {
+    .success-story h5 {
         font-size: 1.2rem;
-        line-height: 1.5rem ;
+        line-height: 1.5rem;
     }
-
 
     .additional-partners {
         padding-top: 7px !important;
     }
 
-
-/*!!!!!!!!!!!!!!!!!!!!*/
-/*end of mobile state*/
+    /*!!!!!!!!!!!!!!!!!!!!*/
+    /*end of mobile state*/
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
