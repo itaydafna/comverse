@@ -1107,7 +1107,7 @@ nav > ul > li:last-child:hover .about {
 
 /*the container of .front and .back quote cards*/
 .card {
-    height: 207px;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
@@ -1963,11 +1963,69 @@ footer form input {
     }
 
     .success-stories h1 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
         padding-top: 22px;
+        padding-bottom: 15px;
+    }
+
+    .stories-list {
+        width: 100%;
         padding-bottom: 20px;
     }
 
+    .stories-list>li,
+    .success-story {
+        display: block;
+        width: 100% !important;
+        padding: 0 3%;
+    }
+
+    .stories-list li:nth-child(2) {
+        margin: 0;
+    }
+
+    .success-story {
+        background: #fff;
+        color: #616161;
+        font-size: 1.5rem;
+        font-weight: 100;
+        line-height: 2.2rem;
+        padding: 5%;
+        height: 172px;
+    }
+
+    .success-story img {
+        width: 95px;
+        height: auto;
+
+    }
+
+    .additional-partners img {
+        width: 95px !important;
+        height: auto;
+
+
+    }
+
+    .quote {
+        height: 90px;
+    }
+
+    .success-story h4,
+    .success-story h5
+    {
+        font-size: 1.2rem;
+        line-height: 1.5rem ;
+    }
+
+
+    .additional-partners {
+        padding-top: 7px !important;
+    }
+
+
+/*!!!!!!!!!!!!!!!!!!!!*/
+/*end of mobile state*/
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
