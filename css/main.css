@@ -681,6 +681,8 @@ nav > ul > li:last-child:hover .about {
 
 .solutions img {
     width: 100%;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
     height: auto;
 }
 
@@ -688,8 +690,6 @@ nav > ul > li:last-child:hover .about {
 
 .solutions img[src*="hover"] {
     display: none;
-    position: absolute;
-    top: 0;
 
 }
 
@@ -1810,6 +1810,11 @@ footer form input {
     /*-------------------------------------*/
     .solutions {
         height: 297px;
+
+    }
+    .solutions .wrapper {
+        width: 100%;
+        height: auto;
     }
 
     .solutions .gen-button {
@@ -1829,8 +1834,6 @@ footer form input {
         bottom: 10px;
     }
 
-    ul {width: 100% !important;}
-
     .solutions li {
         width: 30%;
     }
@@ -1839,17 +1842,19 @@ footer form input {
 
     .solutions li:nth-child(2),
     .solutions li:nth-child(5){
-        margin: 0 2%;
+        margin: 0 3%;
     }
 
 
     .solutions div{
         width:30%;
         height: 20px;
+        overflow: auto;
     }
     .solutions img {
-        width: 100%;
-        height: auto;
+        width: 112px;
+        height: auto;ֿ
+        margin: 0 0;
 
     }
 
@@ -1889,6 +1894,11 @@ footer form input {
     .event-box {
         height: 82px;
         padding-right: 15%;
+    }
+
+    .event-box p {
+        position: relative;
+        bottom: 10px;
     }
 
     .events .date {
