@@ -958,6 +958,7 @@ nav > ul > li:last-child:hover .about {
     display: inline-block;
     text-align: center;
     vertical-align: top;
+
 }
 
 /*setting 2 first story blocks width*/
@@ -982,6 +983,7 @@ nav > ul > li:last-child:hover .about {
     margin: 0 1.9%;
 }
 
+
 /*setting the aside "addtional-partners" positioning and margin*/
 .stories-list > li:first-child aside,
 .stories-list > li:last-child aside {
@@ -992,16 +994,44 @@ nav > ul > li:last-child:hover .about {
     padding-bottom: 0.85em;
 }
 
-/*setting side padding for middle box on first and second story blocks*/
+/*setting side margin for middle box on first and second story blocks*/
 .stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
     margin: 0 2.25%;
+
 }
 
 /*setting padding between 2 aside boxes on last story block*/
 
 .stories-list > li:last-child .additional-partners li:first-child {
-    padding-right: 2.45%;
+    margin-right: 0.77%;
 }
+
+
+/*creating img fludity*/
+
+.success-stories aside img,
+.success-stories aside a
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*fluid width for 1st and 2nd story block aside logo boxes*/
+
+.stories-list > li:nth-child(-n+2) .additional-partners li {
+    width: 31%;
+    height: auto;
+}
+
+
+/*fluid width for 3rd story block aside logo boxes*/
+
+.stories-list > li:last-child .additional-partners li {
+    width: 49%;
+    height: auto;
+}
+
 
 /*reseting default margins for styling and postioning*/
 
@@ -1056,7 +1086,7 @@ nav > ul > li:last-child:hover .about {
     left: 68%;
 }
 
-/*positioning "multi-links" log on last success story*/
+/*positioning "multi-links" logo on last success story*/
 /*so it wouldn't hide the heading'*/
 .stories-list li:last-child .reference img {
     top: 20px;
@@ -1085,7 +1115,7 @@ nav > ul > li:last-child:hover .about {
 /*setting back "play" image*/
 
 .brand {
-    height: 95px;
+    height: atuo;
     position: relative;
     overflow: hidden;
 }
@@ -1917,6 +1947,27 @@ footer form input {
         padding: 3px;
         font-weight: 100;
     }
+
+    /*-------------------------------------*/
+    /*success stories mobile state*/
+    /*-------------------------------------*/
+
+
+    .success-stories {
+        height: 695px;
+    }
+
+    .stories-list>li:last-child {
+        display:none;
+
+    }
+
+    .success-stories h1 {
+        font-size: 2.2rem;
+        padding-top: 22px;
+        padding-bottom: 20px;
+    }
+
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!*/
