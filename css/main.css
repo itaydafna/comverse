@@ -955,13 +955,22 @@ nav > ul > li:last-child:hover .about {
 /*----------------------*/
 /*positioning the boxes*/
 /*----------------------*/
-.stories-list > li,
-.additional-partners li {
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
 
+.stories-list,
+.additional-partners ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: space-between;
 }
+
+/*.story-block {*/
+    /*height: ;*/
+    /*display: flex;*/
+    /*align-content: space-between;*/
+
+/*}*/
+
 
 /*setting 2 first story blocks width*/
 
@@ -979,10 +988,8 @@ nav > ul > li:last-child:hover .about {
     padding-bottom: 4em;
 }
 
-/*setting side margin to middle story block*/
-
-.stories-list > li:nth-child(2) {
-    margin: 0 1.9%;
+.story-block {
+    height:312px;
 }
 
 /*setting the aside "addtional-partners" positioning and margin*/
@@ -995,17 +1002,12 @@ nav > ul > li:last-child:hover .about {
     padding-bottom: 0.85em;
 }
 
-/*setting side margin for middle box on first and second story blocks*/
-.stories-list > li:nth-child(-n+2) .additional-partners li:nth-child(2) {
-    margin: 0 2.25%;
-
-}
 
 /*setting padding between 2 aside boxes on last story block*/
 
-.stories-list > li:last-child .additional-partners li:first-child {
-    margin-right: 0.77%;
-}
+/*.stories-list > li:last-child .additional-partners li:first-child {*/
+    /*margin-right: 0.77%;*/
+/*}*/
 
 /*creating img fludity*/
 
@@ -1551,12 +1553,14 @@ footer form input {
     /*styling mobile searchbox*/
     .mobile-searchbox {
         display: none;
-        width: 97%;
+        width: 98%;
         height: 30px;
         margin: 0 auto;
-        position: relative;
+        position: absolute;
         border-radius: 10%;
-        top: -8px;
+        top: 85%;
+        right: 1%;
+        left: 1%;
     }
 
     .mobile-searchbox input {
@@ -1585,8 +1589,9 @@ footer form input {
         padding-top: 0;
         display: none;
         width: 100%;
-        /*position: absolute;*/
         background: white;
+        top: 82%;
+        right: 0%;
     }
 
     nav > ul,
@@ -1968,9 +1973,17 @@ footer form input {
         height: 695px;
     }
 
+    .story-block {
+        height:auto;
+    }
+
     .stories-list > li:last-child {
         display: none;
 
+    }
+
+    .stories-list {
+        flex-wrap: wrap;
     }
 
     .success-stories h1 {
@@ -2032,6 +2045,14 @@ footer form input {
 
     .additional-partners {
         padding-top: 7px !important;
+    }
+
+
+    /*trying to flip second story-block*/
+
+    .stories-list li:nth-child(2) .story-block {
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
     }
 
 
