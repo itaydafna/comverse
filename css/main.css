@@ -661,16 +661,15 @@ nav > ul > li:last-child:hover .about {
 }
 
 .solutions ul {
-    display: inline-block;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     cursor: pointer;
     padding-bottom: 2.1em;
 }
 
 .solutions li {
-    display: inline-block;
     width: 14%;
-    vertical-align: top;
 }
 
 .solutions li div {
@@ -1869,7 +1868,13 @@ footer form input {
         bottom: 10px;
     }
 
+    .solutions ul {
+        flex-wrap: wrap;
+    }
+
     .solutions li {
+        display: flex;
+        justify-content: center;
         width: 30%;
     }
 
@@ -1879,16 +1884,20 @@ footer form input {
         margin: 0 3%;
     }
 
-    .solutions div {
-        width: 30%;
-        height: 20px;
-        overflow: auto;
+    .solutions li div {
+        /*width: 30%;*/
+        /*height: 20px;*/
+        /*overflow: auto;*/
+        display: flex;
+        justify-content: center;
+
     }
 
     .solutions img {
         width: 112px;
         height: auto;
-        ֿ margin: 0 0;
+        display: flex;
+        justify-self: center;
 
     }
 
