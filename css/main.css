@@ -78,6 +78,20 @@ a {
     left: 88%;
 }
 
+/*menu list items line-divider styling (add margin later based on needs)*/
+
+nav > ul > li:nth-child(-n+3):after,
+.searchbox button:before,
+.login:before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
+    height: 20px;
+    width: 1px;
+    /*margin: 0 0.6em;*/
+}
+
 /*!!!!!!!!!!!!!!!!!*/
 /*!!!!!!!!!!!!!!!!!*/
 /*!*header styling*!*/
@@ -105,7 +119,7 @@ header {
 }
 
 header .wrapper {
-    height: 75px;
+    height: 74px;
     position: relative;
     z-index: 100;
     display: flex;
@@ -113,20 +127,15 @@ header .wrapper {
 }
 
 /*necessary styling for mega-menu hover state */
-nav > ul > li>a {
-    display: inline;
-   /*padding:10px 10px 25px 10px;*/
+nav > ul > li >a {
+    /*display: inline;*/
+   padding:10px 10px 20px 10px;
 
 }
 
 
 nav {
-    display: inline-block;
     font-size: 1.25rem;
-    /*vertical-align: bottom;*/
-    margin: 0 5em 0 2em;
-    /*top: 5px;*/
-    float: left;
     padding-top: 40px;
 }
 
@@ -139,18 +148,6 @@ nav {
 nav > ul > li {
     display: inline-block;
     vertical-align: bottom;
-}
-
-nav > ul > li:nth-child(-n+3):after,
-.searchbox button:before,
-.login:before {
-    content: "";
-    display: inline-block;
-    vertical-align: bottom;
-    background: url('../resources/img/icons/search_line_devider.png') no-repeat;
-    height: 20px;
-    width: 1px;
-    /*margin: 0 0.6em;*/
 }
 
 /*-------------------------*/
@@ -211,6 +208,11 @@ header form {
 .login:hover {
     text-decoration: underline;
     color: blue;
+}
+
+/*setting line-divider margin for search and login */
+.login:before {
+    margin-right: 8px;
 }
 
 /*-------------------*/
@@ -290,6 +292,8 @@ nav figure:before {
 nav > ul > li:hover >a {
     color: #39c;
     background: #fff;
+    border: 2px solid #d5d5d5;
+    box-shadow: #9b9b9b -3px 5px 8px;
 }
 
 nav > ul > li:first-child:hover .needs {
