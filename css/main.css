@@ -101,27 +101,24 @@ a {
 
 header {
     padding-top: 1.5em;
-    height: 75px;
+    height: 90px;
 }
 
 header .wrapper {
     height: 75px;
     position: relative;
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav > ul > li {
-    padding-bottom: 1.5em;
+/*necessary styling for mega-menu hover state */
+nav > ul > li>a {
+    display: inline;
+   /*padding:10px 10px 25px 10px;*/
 
-    /*big bottom-padding to demonstate that paddings do not "spill"*/
-    /*padding-bottom: 6em;*/
 }
 
-.comverse-logo {
-    /*display: inline-block;*/
-    /*vertical-align: bottom;*/
-    float: left;
-}
 
 nav {
     display: inline-block;
@@ -137,7 +134,6 @@ nav {
     display: inline-block;
     vertical-align: bottom;
     font-size: 1.30rem;
-    float: right;
 }
 
 nav > ul > li {
@@ -154,7 +150,7 @@ nav > ul > li:nth-child(-n+3):after,
     background: url('../resources/img/icons/search_line_devider.png') no-repeat;
     height: 20px;
     width: 1px;
-    margin: 0 0.6em;
+    /*margin: 0 0.6em;*/
 }
 
 /*-------------------------*/
@@ -291,7 +287,7 @@ nav figure:before {
 
 /*mega-menu drop-down on hover*/
 
-nav > ul > li:hover {
+nav > ul > li:hover >a {
     color: #39c;
     background: #fff;
 }
